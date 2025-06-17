@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
-import Bio from "./pages/Bio.jsx";
+import Bio from "./pages/bio.jsx";
 import Multimedia from "./pages/Multimedia.jsx";
 
 const App = () => {
