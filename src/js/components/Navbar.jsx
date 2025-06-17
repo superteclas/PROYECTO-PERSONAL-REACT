@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../img/logonormalsinfondo.png";
 import "../../styles/navbar.css";
 
+
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
