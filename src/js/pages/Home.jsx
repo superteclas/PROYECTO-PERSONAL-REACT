@@ -20,13 +20,7 @@ const Home = () => {
           If you see this green button... bootstrap is working...
         </a>
 
-        <p>
-          Made by{" "}
-          <a href="http://www.4geeksacademy.com" target="_blank" rel="noopener noreferrer">
-            4Geeks Academy
-          </a>
-          , with love!
-        </p>
+        
       </div>
 
       <div className="my-5">
