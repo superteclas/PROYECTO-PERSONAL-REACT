@@ -17,11 +17,9 @@ export const Navbar = () => {
 </NavLink>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <NavLink to="/contact" className="nav-link">
-                Contacto
-              </NavLink>
-            </li>
+             <li className="nav-item">
+            <NavLink to="/contact" className="nav-link">Contacto</NavLink>
+          </li>
           </ul>
         </div>
       </div>
