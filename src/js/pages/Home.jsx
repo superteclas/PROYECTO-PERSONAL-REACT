@@ -1,11 +1,12 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import { Navbar } from "../components/Navbar";
-import LogoCarousel from "../components/LogoCarousel"; // 👈 importa el componente aquí
+import LogoCarousel from "../components/LogoCarousel";
+import { Footer } from "../components/Footer"; // 👈 importa el Footer
 
 const Home = () => {
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
 
       <div className="text-center mt-5">
@@ -28,13 +29,13 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Carrusel de logos debajo del contenido principal */}
       <div className="my-5">
         <LogoCarousel />
       </div>
+
+      <Footer /> {/* 👈 aquí se muestra el footer */}
     </div>
   );
 };
 
 export default Home;
-
