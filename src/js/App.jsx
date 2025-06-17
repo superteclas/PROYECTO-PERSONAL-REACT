@@ -2,8 +2,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./components/Home.jsx";
-import Contact from "./components/Contact";
+import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const App = () => {
   return (
