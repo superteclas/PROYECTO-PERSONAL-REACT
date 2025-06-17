@@ -1,0 +1,52 @@
+
+.navbar {
+    background: linear-gradient(to bottom, #595959, #767474);
+    padding: 10px 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+.nav-link {
+    color: #000000; /* Color negro para los enlaces no seleccionados */
+    font-size: 25px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    color: #ffffff; /* Color blanco para el enlace activo */
+    background-color: transparent; /* Opcional, por si deseas remover cualquier fondo por defecto */
+}
+
+.nav-link:hover {
+    color: #ffffff; /* Color blanco al pasar el ratón sobre el enlace */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+
+    margin-left: 15em;
+}
