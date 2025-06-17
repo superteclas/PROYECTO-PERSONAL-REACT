@@ -1,52 +1,60 @@
-
 .navbar {
-    background: linear-gradient(to bottom, #595959, #767474);
-    padding: 10px 20px;
-    height: 70px;
-    display: flex;
-    align-items: center;
+  background: linear-gradient(to bottom, #dbdbdb, #767474);
+  padding: 10px 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
+  height: 80px;
+  width: auto;
+  object-fit: contain;
 }
+
 .nav-link {
-    color: #000000; /* Color negro para los enlaces no seleccionados */
-    font-size: 25px;
-    padding: 10px 15px;
-    text-transform: uppercase;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .nav-link.active {
-    color: #ffffff; /* Color blanco para el enlace activo */
-    background-color: transparent; /* Opcional, por si deseas remover cualquier fondo por defecto */
+  color: #ffffff;
 }
 
 .nav-link:hover {
-    color: #ffffff; /* Color blanco al pasar el ratón sobre el enlace */
+  color: #ffffff;
 }
 
 .navbar-toggler {
-    border: none;
+  border: none;
+  background: transparent;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ajusta el margin para centrar mejor el menu en desktop */
+.navbar-nav {
+  margin-left: auto;
 }
 
 .nav-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.navbar-nav {
-
-    margin-left: 15em;
+/* Responsive */
+@media (max-width: 991px) {
+  .nav-link {
+    font-size: 18px;
+  }
 }
