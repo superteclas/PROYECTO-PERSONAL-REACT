@@ -16,7 +16,7 @@ const LogoCarousel = () => {
   const settings = {
     dots: false, 
     infinite: true,
-    speed: 3000,
+    speed: 4000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -59,7 +59,7 @@ const LogoCarousel = () => {
       <Slider {...settings}>
         {duplicatedLogos.map((logo, index) => (
           <div key={index}>
-            <img src={logo} alt={`logo-${index}`} style={{ width: '100%', height: 'auto' }} />
+            <img src={logo} alt={`logo-${index}`} style={{ width: '90%', height: 'auto' }} />
           </div>
         ))}
       </Slider>
