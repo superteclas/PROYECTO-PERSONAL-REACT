@@ -17,12 +17,12 @@ const Home = () => {
         style={{
           backgroundImage: `url(${topImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center 30%",
           height: "90vh"
         }}
       >
         <div className="container text-center bg-black bg-opacity-50 p-4 rounded">
-          <h1 className="display-3 fw-bold">Alvaro Ponce</h1>
+          <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
           <p className="lead">Pianista profesional · Intérprete · Educador musical</p>
         </div>
       </section>
