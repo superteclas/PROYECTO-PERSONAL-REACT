@@ -1,7 +1,7 @@
 .navbar {
   background: linear-gradient(to bottom, #dbdbdb, #767474);
   padding: 10px 20px;
-  height: 70px;
+  min-height: 100px; /* o el mismo tamaño del logo */
   display: flex;
   align-items: center;
 }
@@ -12,7 +12,7 @@
 }
 
 .navbar-logo {
-  height: 80px;
+  height: 100px;
   width: auto;
   object-fit: contain;
 }
@@ -26,8 +26,9 @@
 }
 
 .nav-link.active {
-  color: #ffffff;
+  color: #ffffff !important;
 }
+
 
 .nav-link:hover {
   color: #ffffff;
