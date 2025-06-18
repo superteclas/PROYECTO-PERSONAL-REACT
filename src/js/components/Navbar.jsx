@@ -30,7 +30,7 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink to="/bio" className="nav-link">Sobre mí</NavLink>
+              <NavLink to="/about" className="nav-link">Sobre mí</NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/multimedia" className="nav-link">Multimedia</NavLink>

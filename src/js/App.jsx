@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
-import Bio from "./pages/bio.jsx";
+import About from "./pages/About.jsx";
 import Multimedia from "./pages/Multimedia.jsx";
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/bio" element={<Bio />} />
+      <Route path="/about" element={<About />} />
       <Route path="/multimedia" element={<Multimedia />} />
     </Routes>
   );
