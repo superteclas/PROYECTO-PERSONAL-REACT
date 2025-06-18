@@ -1,3 +1,5 @@
 npm install react-slick slick-carousel
 
+npm install react-icons
+
 npm run start

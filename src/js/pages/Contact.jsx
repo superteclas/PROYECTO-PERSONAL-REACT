@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
-
+import { Footer } from "../components/Footer"; // 👈 importa el Footer
 const Contact = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -9,6 +9,7 @@ const Contact = () => {
       <h1>Contacto</h1>
       <p>Esta es la página de contacto.</p>
     </div>
+    <Footer />
     </div>
   );
 };

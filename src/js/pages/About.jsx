@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer"; // 👈 importa el Footer
 
 const About = () => {
   return (
@@ -7,8 +8,18 @@ const About = () => {
           <Navbar />
     <div className="text-center mt-5">
       <h1>sobre mi</h1>
-      <p>Esta es la página de sobre mi.</p>
+      <p>Esta es la página de sobre mikaksdkasdasdkasdkasdkaskdaskdaksd
+        aksdkasdkaskdaksdkaskdaksdkasdkaskdaksdkasdkaskdaksdkasdkaskdaksdkasdkaskdadskdkasdkaskdaksdkaskd
+        aksdkasdkaskdaksdkaskdaksdkasdkaskdaksdkasdkaskdaksdkasdkaskdaksdkasdkaskdadskdkasdkaskdaksdkaskdaksaskdadk
+        askdaskdkasdkaskdksad
+        
+        
+        
+        
+        
+        .</p>
     </div>
+    <Footer />
     </div>
   );
 };
