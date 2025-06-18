@@ -9,9 +9,9 @@ export const Footer = () => {
 					href="https://www.youtube.com/superteclas"
 					target="_blank"
 					rel="noopener noreferrer"
-					style={{ color: "#333", textDecoration: "underline" }}
+					style={{ color: "#333", textDecoration: "none" }}
 				>
-					Alvaro Ponce Marín
+					Álvaro Ponce Marín
 				</a>{" "}
 				© {new Date().getFullYear()}
 			</p>
