@@ -4,21 +4,21 @@ import { Footer } from "../components/Footer";
 
 // Importar imágenes locales
 import topImage from "../../img/pianoroto.jpg";
-import downImage from "../../img/logofuegosinfondo.png";
+import downImage from "../../img/piano2.jpeg";
 
 const Home = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
 
-      {/* Hero - Presentación Alvaro */}
+      {/* Hero Álvaro */}
       <section
         className="d-flex align-items-center text-white"
         style={{
           backgroundImage: `url(${topImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
-          height: "90vh"
+          height: "90vh",
         }}
       >
         <div className="container text-center bg-black bg-opacity-50 p-4 rounded">
@@ -28,33 +28,77 @@ const Home = () => {
       </section>
 
       {/* Servicios */}
-      <section className="bg-white py-5">
-        <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-          {/* Imagen a la izquierda */}
-          <div className="mb-4 mb-md-0">
+      <section className="bg-light py-5 position-relative overflow-hidden">
+        <div className="container position-relative">
+
+          {/* Caja blanca con texto */}
+          <div
+            className="bg-white shadow rounded p-4 p-md-5 d-flex flex-column flex-md-row"
+            style={{
+              zIndex: 1,
+              marginTop: "60px",
+              minHeight: "320px",
+            }}
+          >
+            {/* Espacio reservado en desktop para la imagen */}
+            <div className="d-none d-md-block" style={{ minWidth: "350px" }}></div>
+
+            {/* Texto */}
+            <div className="ms-md-5 mt-4 mt-md-0">
+              <small className="text-muted">Educación · Música · Producción</small>
+              <h2 className="fw-bold mt-2">Servicios</h2>
+              <p>
+                Ofrezco clases de piano personalizadas, interpretación para eventos,
+                arreglos musicales y producción artística. Mi enfoque está centrado en
+                la emoción, la técnica y la expresión.
+              </p>
+              <ul className="list-unstyled">
+                <li>✓ Clases de piano (presencial / online)</li>
+                <li>✓ Conciertos y presentaciones en vivo</li>
+                <li>✓ Arreglos y producción musical</li>
+              </ul>
+              <a href="contact" className="btn btn-outline-dark mt-3">
+                Contactar
+              </a>
+            </div>
+          </div>
+
+          {/* Imagen superpuesta solo en escritorio */}
+          <div
+            className="position-absolute d-none d-md-block"
+            style={{
+              top: "50%",
+              left: "0",
+              transform: "translate(-25%, -50%)",
+              zIndex: 2,
+            }}
+          >
             <img
               src={downImage}
               alt="Servicios"
               className="img-fluid rounded shadow"
-              style={{ maxWidth: "400px" }}
+              style={{
+                maxWidth: "350px",
+                borderRadius: "12px",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.4)"
+              }}
             />
           </div>
-          <div className="ms-md-4">
-            <h2 className="fw-bold">Servicios</h2>
-            <p>
-              Ofrezco clases de piano personalizadas, interpretación para eventos,
-              arreglos musicales y producción artística. Mi enfoque está centrado en
-              la emoción, la técnica y la expresión.
-            </p>
-            <ul className="list-unstyled">
-              <li>✓ Clases de piano (presencial / online)</li>
-              <li>✓ Conciertos y presentaciones en vivo</li>
-              <li>✓ Arreglos y producción musical</li>
-            </ul>
-            <a href="contact" className="btn btn-dark mt-3">
-              Contactar
-            </a>
+
+          {/* Imagen normal en móviles */}
+          <div className="d-block d-md-none text-center mt-4">
+            <img
+              src={downImage}
+              alt="Servicios"
+              className="img-fluid rounded shadow"
+              style={{
+                maxWidth: "300px",
+                borderRadius: "12px",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.4)"
+              }}
+            />
           </div>
+
         </div>
       </section>
 
