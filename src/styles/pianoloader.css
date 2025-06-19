@@ -1,16 +1,27 @@
-.piano-key {
-  transition: fill 0.3s;
+.piano-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f6;
 }
 
-.black-key.animate {
-  animation: pulse 1.5s infinite alternate;
+.white-key {
+  animation: keyPress 1s infinite alternate ease-in-out;
+  transform-origin: bottom;
 }
 
-@keyframes pulse {
-  0% {
-    fill: #000;
-  }
-  100% {
-    fill: #444;
-  }
+.black-key {
+  animation: keyPressBlack 1s infinite alternate ease-in-out;
+  transform-origin: bottom;
+}
+
+@keyframes keyPress {
+  0% { transform: scaleY(1); fill: #fff; }
+  100% { transform: scaleY(0.95); fill: #ddd; }
+}
+
+@keyframes keyPressBlack {
+  0% { transform: scaleY(1); }
+  100% { transform: scaleY(0.9); }
 }
