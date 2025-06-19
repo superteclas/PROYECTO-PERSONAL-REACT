@@ -23,7 +23,7 @@ const Home = () => {
       >
         <div className="container text-center bg-black bg-opacity-50 p-4 rounded">
           <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
-          <p className="lead">Pianista profesional · Intérprete · Educador musical</p>
+          <p className="lead">Pianista-Teclista · Arreglista · </p>
         </div>
       </section>
 
@@ -53,8 +53,9 @@ const Home = () => {
                 la emoción, la técnica y la expresión.
               </p>
               <ul className="list-unstyled">
-                <li>✓ Clases de piano (presencial / online)</li>
+                
                 <li>✓ Conciertos y presentaciones en vivo</li>
+                <li>✓ Clases de piano particulares (presencial/online)</li>
                 <li>✓ Arreglos y producción musical</li>
               </ul>
               <a href="contact" className="btn btn-outline-dark mt-3">
