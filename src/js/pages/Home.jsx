@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import LogoCarousel from "../components/LogoCarousel"; // ← Asegúrate de que esta ruta sea correcta
 
 // Imágenes locales
 import topImage from "../../img/pianoroto.jpg";
@@ -31,8 +32,7 @@ const Home = () => {
       <section className="bg-light py-5">
         <div className="container">
           <div className="row align-items-center bg-white shadow rounded p-4 p-md-5 mt-5">
-            
-            {/* Imagen fluida */}
+            {/* Imagen */}
             <div className="col-md-4 text-center text-md-start mb-4 mb-md-0">
               <img
                 src={downImage}
@@ -70,6 +70,17 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Carrusel de logos */}
+     <section className="py-5 bg-white">
+  <div className="text-center mb-4 px-0">
+    <h5 className="text-muted mb-3">Colaboraciones / Clientes / Proyectos</h5>
+  </div>
+  <div className="w-100 px-0">
+    <LogoCarousel />
+  </div>
+</section>
+
 
       <Footer />
     </div>
