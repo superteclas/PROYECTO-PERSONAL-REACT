@@ -45,18 +45,16 @@ const Home = () => {
 
             {/* Texto */}
             <div className="ms-md-5 mt-4 mt-md-0">
-              <small className="text-muted">Educación · Música · Producción</small>
+              <small className="text-muted">Música · Arreglos · Grabación</small>
               <h2 className="fw-bold mt-2">Servicios</h2>
               <p>
-                Ofrezco clases de piano personalizadas, interpretación para eventos,
-                arreglos musicales y producción artística. Mi enfoque está centrado en
-                la emoción, la técnica y la expresión.
+                Soy un músico polivalente con experiencia en una amplia variedad de estilos. Ofrezco clases de piano tanto presenciales como online, interpretación para eventos, arreglos musicales y servicios como músico de estudio. También realizo grabaciones profesionales desde casa, adaptándome a las necesidades de cada proyecto. Mi enfoque combina técnica, emoción y versatilidad para lograr una expresión musical auténtica.
               </p>
               <ul className="list-unstyled">
                 
                 <li>✓ Conciertos y presentaciones en vivo</li>
                 <li>✓ Clases de piano particulares (presencial/online)</li>
-                <li>✓ Arreglos y producción musical</li>
+                <li>✓ Arreglos y grabaciones musicales</li>
               </ul>
               <a href="contact" className="btn btn-outline-dark mt-3">
                 Contactar
