@@ -3,14 +3,15 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import logo1 from  "../../img/logos/capo.png";
-import logo2 from  "../../img/logos/black.jpg";
+import logo2 from  "../../img/logos/black.png";
 import logo3 from  "../../img/logos/consigo.png";
 import logo4 from  "../../img/logos/eventime.webp";
-import logo5 from  "../../img/logos/glitter.jpg";
+import logo5 from  "../../img/logos/glitter.png";
 import logo6 from  "../../img/logos/Marriot.svg";
 import logo7 from  "../../img/logos/rock.png";
 import logo8 from  "../../img/logos/tribu.png";
 import logo9 from  "../../img/logos/polop.png";
+import logo10 from  "../../img/logos/babalu.png";
 
 const logos = [
   logo1,
@@ -22,6 +23,7 @@ const logos = [
   logo7,
   logo8, // index 7
   logo9,
+  logo10,
 ];
 
 const LogoCarousel = () => {
