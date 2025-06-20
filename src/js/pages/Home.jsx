@@ -1,9 +1,7 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import LogoCarousel from "../components/LogoCarousel"; // ← Asegúrate de que esta ruta sea correcta
-
-// Imágenes locales
+import LogoCarousel from "../components/LogoCarousel";
 import topImage from "../../img/pianoroto.jpg";
 import downImage from "../../img/piano2.jpeg";
 
@@ -51,12 +49,7 @@ const Home = () => {
               <small className="text-muted">Música · Arreglos · Grabación</small>
               <h2 className="fw-bold mt-2">Servicios</h2>
               <p>
-                Soy un músico polivalente con experiencia en una amplia variedad de estilos.
-                Ofrezco clases de piano tanto presenciales como online, interpretación para
-                eventos, arreglos musicales y servicios como músico de estudio. También realizo
-                grabaciones profesionales desde casa, adaptándome a las necesidades de cada
-                producción. Mi enfoque combina técnica, emoción y versatilidad para lograr una
-                expresión musical auténtica.
+Soy un músico polivalente con experiencia en una amplia gama de estilos. Me dedico a la interpretación en vivo para conciertos y eventos, y también ofrezco arreglos musicales y colaboraciones como músico de estudio. Imparto clases de piano, tanto presenciales como online, y realizo grabaciones desde casa, adaptándome a las necesidades de cada proyecto. Mi enfoque une técnica, emoción y versatilidad para lograr una expresión musical auténtica.
               </p>
               <ul className="list-unstyled">
                 <li>✓ Conciertos y presentaciones en vivo</li>

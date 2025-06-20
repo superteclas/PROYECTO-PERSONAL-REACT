@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer"; // 👈 importa el Footer
+import { Footer } from "../components/Footer"; 
 const Contact = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
