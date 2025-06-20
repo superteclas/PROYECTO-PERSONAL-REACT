@@ -51,7 +51,7 @@ const Home = () => {
               <small className="text-muted">Música · Arreglos · Grabación</small>
               <h2 className="fw-bold mt-2">Servicios</h2>
               <p>
-                Soy un músico con experiencia en una amplia variedad de estilos.
+                Soy un músico polivalente con experiencia en una amplia variedad de estilos.
                 Ofrezco clases de piano tanto presenciales como online, interpretación para
                 eventos, arreglos musicales y servicios como músico de estudio. También realizo
                 grabaciones profesionales desde casa, adaptándome a las necesidades de cada
@@ -74,7 +74,7 @@ const Home = () => {
       {/* Carrusel de logos */}
 <section className="pt-0 pb-5">
   <div className="text-center mb-0 px-0">
-    <h5 className="text-muted mt-0 mb-0">He tenido el placer de trabajar con</h5>
+    <h4 className="text-muted mt-0 mb-5">He tenido el placer de trabajar con:</h4>
   </div>
   <div className="w-100 px-0">
     <LogoCarousel />
