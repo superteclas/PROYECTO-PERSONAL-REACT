@@ -72,9 +72,9 @@ const Home = () => {
       </section>
 
       {/* Carrusel de logos */}
-     <section className="py-5">
-  <div className="text-center mb-4 px-0">
-    <h5 className="text-muted mb-10">He tenido el placer de trabajar con</h5>
+<section className="pt-0 pb-5">
+  <div className="text-center mb-0 px-0">
+    <h5 className="text-muted mt-0 mb-0">He tenido el placer de trabajar con</h5>
   </div>
   <div className="w-100 px-0">
     <LogoCarousel />
