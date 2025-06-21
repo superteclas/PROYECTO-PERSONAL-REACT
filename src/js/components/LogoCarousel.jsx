@@ -13,6 +13,7 @@ import logo8 from  "../../img/logos/tribu.png";
 import logo9 from  "../../img/logos/polop.png";
 import logo10 from  "../../img/logos/babalu.png";
 import logo11 from  "../../img/logos/adlibitum.png";
+import logo12 from  "../../img/logos/Popladies.png";
 
 const logos = [
   logo1,
@@ -26,6 +27,8 @@ const logos = [
   logo9,
   logo10,
   logo11,
+  logo12,
+  
 ];
 
 const LogoCarousel = () => {
