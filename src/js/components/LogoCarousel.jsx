@@ -14,20 +14,24 @@ import logo9 from  "../../img/logos/polop.png";
 import logo10 from  "../../img/logos/babalu.png";
 import logo11 from  "../../img/logos/adlibitum.png";
 import logo12 from  "../../img/logos/Popladies.png";
+import logo13 from "../../img/logos/rockbeat.png"
+import logo14 from "../../img/logos/hive.png"
 
 const logos = [
   logo1,
-  logo2,// index 5
+  logo2,
   logo3,
   logo4,
   logo5,
-  logo6, // index 5
+  logo6,
   logo7,
-  logo8, // index 7
+  logo8, 
   logo9,
   logo10,
   logo11,
   logo12,
+  logo13,
+  logo14,
   
 ];
 
@@ -61,15 +65,25 @@ const LogoCarousel = () => {
             objectFit: 'contain',
           };
 
-          // Aumentar tamaño de logo 6 (index 5)
+          
           if (index % logos.length === 5) {
             imgStyle.maxHeight = '130px';
           }
 
-          // Disminuir tamaño de logo 8 (index 7)
+         
           if (index % logos.length === 7) {
             imgStyle.maxHeight = '70px';
           }
+
+          if (index % logos.length === 12) {
+  imgStyle.maxHeight = '40px';
+  imgStyle.marginTop = '19px';
+}
+
+if (index % logos.length === 13) {
+            imgStyle.marginbottom = '29px';
+          }
+
 
           return (
             <div key={index} style={{ padding: 0 }}>
