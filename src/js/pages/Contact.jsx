@@ -2,8 +2,8 @@ import React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
-import contactBg from "../../img/tecladosblack.jpg"; // Ajusta esta ruta si es necesario
-import "../../styles/contact.css"; // Asegúrate de crear este archivo
+import contactBg from "../../img/tecladosblack.jpg";
+import "../../styles/contact.css";
 
 const Contact = () => {
   return (
@@ -23,18 +23,18 @@ const Contact = () => {
             href="https://wa.me/+34666164440"
             target="_blank"
             rel="noopener noreferrer"
-            className="contact-icon"
+            className="contact-icon whatsapp"
           >
             <FaWhatsapp />
           </a>
-          <a href="mailto:alvaroponcemarin@gmail.com" className="contact-icon">
+          <a href="mailto:alvaroponcemarin@gmail.com" className="contact-icon email">
             <FaEnvelope />
           </a>
           <a
             href="https://instagram.com/alvaroponcekeys"
             target="_blank"
             rel="noopener noreferrer"
-            className="contact-icon"
+            className="contact-icon instagram"
           >
             <FaInstagram />
           </a>
