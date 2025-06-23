@@ -81,7 +81,7 @@ const LogoCarousel = () => {
 }
 
 if (index % logos.length === 13) {
-            imgStyle.marginbottom = '36px';
+            imgStyle.marginbottom = '50px';
           }
 
 
