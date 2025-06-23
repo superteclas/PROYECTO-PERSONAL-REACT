@@ -65,7 +65,19 @@ const LogoCarousel = () => {
             objectFit: 'contain',
           };
 
-          
+          if (index % logos.length === 0) {
+            imgStyle.maxHeight = '130px';
+          }
+          if (index % logos.length === 1) {
+            imgStyle.maxHeight = '130px';
+          }
+          if (index % logos.length === 2) {
+            imgStyle.maxHeight = '60px';
+          }
+          if (index % logos.length === 3) {
+            imgStyle.maxHeight = '90px';
+          }
+
           if (index % logos.length === 5) {
             imgStyle.maxHeight = '130px';
           }
@@ -81,7 +93,7 @@ const LogoCarousel = () => {
 }
 
 if (index % logos.length === 13) {
-            imgStyle.marginbottom = '50px';
+            imgStyle.marginbottom = '100px';
           }
 
 
