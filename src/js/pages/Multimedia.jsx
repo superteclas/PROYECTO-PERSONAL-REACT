@@ -1,41 +1,50 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import "../../styles/multimedia.css";
+
+// ✅ Importar imágenes
+import foto1 from "../../img/logonormalsinfondo.png";
+import foto2 from "../../img/logonormalsinfondo.png";
+import foto3 from "../../img/logonormalsinfondo.png";
 
 const Multimedia = () => {
+  const imagenes = [foto1, foto2, foto3];
+
   return (
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
+
       <div className="text-center mt-5 px-3">
-        <h1>MULTIMEDIA</h1>
-        <p>Explora lo último en vídeos, animaciones y experiencias AR/VR.</p>
+        <h1 className="text-4xl font-bold">MULTIMEDIA</h1>
+        <p className="text-lg mt-2">Explora contenido visual de alta calidad.</p>
 
-        {/* 🎬 Vídeo corto destacado */}
-        <div className="embed-responsive embed-responsive-16by9 my-4">
+        {/* 🎬 Vídeo 4K grande */}
+        <div className="my-8 w-full max-w-6xl mx-auto aspect-video">
           <iframe
-            className="embed-responsive-item"
-            src="https://www.youtube.com/embed/VIDEOID"
+            className="w-full h-full rounded-2xl shadow-lg"
+            src="https://www.youtube.com/embed/VIDEO_ID_AQUI?rel=0&vq=hd2160"
+            title="Vídeo 4K destacado"
             allowFullScreen
-            title="Vídeo destacado"
-          />
+            loading="lazy"
+          ></iframe>
         </div>
 
-        {/* 🔄 Microinteracción: objeto flotante animado */}
-        <div className="floating-object mt-4">
-          <img src="/images/float-icon.png" alt="Elemento flotante" />
-        </div>
-
-        {/* 🤖 Experiencia interactiva IA/AR (placeholder) */}
-        <div className="immersive-ar my-5 p-4">
-          <p>Pantalla interactiva AR/VR aquí</p>
-        </div>
-
-        {/* 🌿 Illustración orgánica */}
-        <div className="organic-illustration my-4">
-          <img src="/images/illustration.png" alt="Ilustración orgánica" />
+        {/* 🖼️ Galería de fotos desde src */}
+        <div className="mt-10 px-4">
+          <h2 className="text-2xl font-semibold mb-4">Galería de imágenes</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {imagenes.map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt={`Imagen ${i + 1}`}
+                className="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+              />
+            ))}
+          </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
