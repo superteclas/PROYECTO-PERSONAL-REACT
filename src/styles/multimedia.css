@@ -1,0 +1,20 @@
+.floating-object {
+  animation: float 4s ease-in-out infinite;
+  width: 100px;
+  margin: 0 auto;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.immersive-ar {
+  background: #f0f0f0;
+  border: 2px dashed #ccc;
+}
+
+.organic-illustration img {
+  max-width: 80%;
+  border-radius: 8px;
+}
