@@ -18,7 +18,7 @@ export default function PianoLoader({ visible }) {
             x={i * 20 + 5}
             y={10}
             width={14}
-            height={60}
+            height={60} 
             fill="#fff"
             className="white-key"
             style={{ animationDelay: `${i * 0.1}s` }}
