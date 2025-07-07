@@ -24,7 +24,7 @@ const About = () => {
           </p>
 
           <p className="text-lg md:text-xl leading-relaxed text-gray-600">
-            <strong>🎹 Músico profesional:</strong> He colaborado con artistas como Isabel Pantoja, Carlos Tarque, Javier Gurruchaga y Sara Serena,
+            <strong>🎹 Músico profesional:</strong> He colaborado con artistas como Isabel Pantoja, Carlos Tarque, Sienna y Sara Serena,
             actuando en escenarios nacionales e internacionales. También he trabajado como teclista, director musical y profesor de piano en
             diversas escuelas y conservatorios durante más de una década.
           </p>

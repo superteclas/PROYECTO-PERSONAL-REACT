@@ -33,6 +33,7 @@ const logos = [
   logo13,
   logo14,
   
+  
 ];
 
 const LogoCarousel = () => {
