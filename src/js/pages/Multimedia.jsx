@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-// ✅ Importar imágenes
-import foto1 from "../../img/logonormalsinfondo.png";
-import foto2 from "../../img/logonormalsinfondo.png";
-import foto3 from "../../img/logonormalsinfondo.png";
-
 const Multimedia = () => {
-  const imagenes = [foto1, foto2, foto3];
+  const videos = [
+    { id: "Eb6yGW3JNw8", title: "Video 1" },
+    { id: "Eb6yGW3JNw8", title: "Video 2" },
+    { id: "Eb6yGW3JNw8", title: "Video 3" },
+    { id: "Eb6yGW3JNw8", title: "Video 4" },
+    { id: "Eb6yGW3JNw8", title: "Video 5" },
+    { id: "Eb6yGW3JNw8", title: "Video 6" },
+  ];
+
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -400 : 400,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -18,30 +31,64 @@ const Multimedia = () => {
         <h1 className="text-4xl font-bold">MULTIMEDIA</h1>
         <p className="text-lg mt-2">Explora contenido visual de alta calidad.</p>
 
-        {/* 🎬 Vídeo 4K grande */}
+        {/* 🎬 Video principal */}
         <div className="my-8 w-full max-w-6xl mx-auto aspect-video">
           <iframe
             className="w-full h-full rounded-2xl shadow-lg"
-            src="https://www.youtube.com/embed/VIDEO_ID_AQUI?rel=0&vq=hd2160"
-            title="Vídeo 4K destacado"
+            src="https://www.youtube.com/embed/Eb6yGW3JNw8?si=_k-Is1TsCyUQqI50"
+            title="Video principal"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            loading="lazy"
           ></iframe>
         </div>
 
-        {/* 🖼️ Galería de fotos desde src */}
-        <div className="mt-10 px-4">
-          <h2 className="text-2xl font-semibold mb-4">Galería de imágenes</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {imagenes.map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt={`Imagen ${i + 1}`}
-                className="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
-              />
+        {/* 🎠 Carrusel con botones */}
+        <div className="mt-10 px-4 mb-20 text-left relative max-w-full">
+          <h2 className="text-2xl font-semibold mb-4">Más videos</h2>
+
+          {/* Botón Izquierda */}
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-100"
+            aria-label="Scroll left"
+          >
+            ◀
+          </button>
+
+          {/* Contenedor carrusel */}
+          <div
+            ref={scrollRef}
+            className="flex flex-row space-x-4 overflow-x-auto no-scrollbar scroll-smooth"
+            style={{ scrollBehavior: "smooth" }}
+          >
+            {videos.map((video, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-[320px] md:w-[400px] aspect-video rounded-xl shadow-lg overflow-hidden"
+              >
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${video.id}`}
+                  title={video.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
             ))}
           </div>
+
+          {/* Botón Derecha */}
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-100"
+            aria-label="Scroll right"
+          >
+            ▶
+          </button>
         </div>
       </div>
 
