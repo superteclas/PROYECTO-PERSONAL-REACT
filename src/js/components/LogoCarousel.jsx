@@ -72,7 +72,7 @@ const LogoCarousel = () => {
             imgStyle.maxHeight = '90px'; // consigo
           }
           if (index === 3) {
-            imgStyle.maxHeight = '40px';
+            imgStyle.maxHeight = '30px';
             imgStyle.marginTop = '25px'; // rockbeat
           }
           if (index === 4) {

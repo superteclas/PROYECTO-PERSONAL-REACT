@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { FaCommentDots } from "react-icons/fa";
 import "../../styles/multimedia.css";
 
 const Multimedia = () => {
@@ -25,7 +26,7 @@ const Multimedia = () => {
   };
 
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex flex-column min-vh-100" style={{ position: "relative" }}>
       <Navbar />
 
       <div className="text-center mt-5 px-3">
@@ -128,6 +129,14 @@ const Multimedia = () => {
       </div>
 
       <Footer />
+
+      {/* Botón flotante de contacto */}
+      <div className="floating-contact">
+        <a href="/contact">
+          <FaCommentDots />
+          Contactar
+        </a>
+      </div>
     </div>
   );
 };
