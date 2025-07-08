@@ -73,20 +73,39 @@ const LogoCarousel = () => {
             imgStyle.maxHeight = '130px';
           }
           if (index % logos.length === 2) {
-            imgStyle.maxHeight = '60px';
-          }
-          if (index % logos.length === 3) {
             imgStyle.maxHeight = '90px';
           }
-
+          if (index % logos.length === 3) {
+            imgStyle.maxHeight = '40px';
+          }
+          if (index % logos.length === 4) {
+            imgStyle.maxHeight = '100px';
+          }
           if (index % logos.length === 5) {
             imgStyle.maxHeight = '130px';
           }
+          if (index % logos.length === 6) {
+            imgStyle.maxHeight = '100px';
+          }
+          if (index % logos.length === 7) {
+            imgStyle.maxHeight = '60px';
+          }
+
+          if (index % logos.length === 8) {
+            imgStyle.maxHeight = '90 px';
+          }
 
          
-          if (index % logos.length === 7) {
+          if (index % logos.length === 9) {
+            imgStyle.maxHeight = '100px';
+          }
+          if (index % logos.length === 10) {
+            imgStyle.maxHeight = '100px';
+          }
+          if (index % logos.length === 11) {
             imgStyle.maxHeight = '70px';
           }
+
 
           if (index % logos.length === 12) {
   imgStyle.maxHeight = '40px';
@@ -95,6 +114,12 @@ const LogoCarousel = () => {
 
 if (index % logos.length === 13) {
             imgStyle.marginbottom = '100px';
+          }
+          if (index % logos.length === 14) {
+            imgStyle.maxHeight = '70px';
+          }
+           if (index % logos.length === 15) {
+            imgStyle.maxHeight = '70px';
           }
 
 
