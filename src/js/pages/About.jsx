@@ -3,10 +3,9 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { motion } from "framer-motion";
 import { FaCommentDots } from "react-icons/fa";
-import "../../styles/about.css"; // Asegúrate que esté bien enlazado
+import "../../styles/about.css";
 
-import leftImage from "../../img/sienna.jpg";   // Cambia según tu estructura
-import rightImage from "../../img/yo.jpeg";     // Cambia según tu estructura
+import backgroundImage from "../../img/yo.jpeg"; // Imagen única de fondo
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -31,19 +30,15 @@ const About = () => {
   ];
 
   return (
-    <div className="relative flex flex-col min-h-screen font-sans text-gray-800 overflow-hidden">
+    <div className="about-page">
       <Navbar />
 
-      <main className="flex flex-row items-center justify-center min-h-screen gap-4 px-2 md:px-8 py-16">
-        {/* Imagen izquierda */}
-        <div className="hidden md:block side-image-container">
-          <img src={leftImage} alt="Imagen izquierda" />
-        </div>
+      <main className="about-main" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="overlay" />
 
-        {/* Texto central */}
-        <div className="flex-grow max-w-4xl text-center space-y-10 px-4">
+        <div className="content-container">
           <motion.h1
-            className="text-4xl md:text-5xl font-bold text-gray-900"
+            className="text-4xl md:text-5xl font-bold text-white text-center"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -51,30 +46,26 @@ const About = () => {
             Sobre mí
           </motion.h1>
 
-          {paragraphs.map((text, index) => (
-            <motion.p
-              key={index}
-              className="text-lg md:text-xl leading-relaxed text-gray-700"
-              custom={index}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInUp}
-            >
-              {text}
-            </motion.p>
-          ))}
-        </div>
-
-        {/* Imagen derecha */}
-        <div className="hidden md:block side-image-container">
-          <img src={rightImage} alt="Imagen derecha" />
+          <div className="paragraphs space-y-6 mt-10">
+            {paragraphs.map((text, index) => (
+              <motion.p
+                key={index}
+                className="text-lg md:text-xl leading-relaxed text-white text-center"
+                custom={index}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={fadeInUp}
+              >
+                {text}
+              </motion.p>
+            ))}
+          </div>
         </div>
       </main>
 
       <Footer />
 
-      {/* Botón flotante de contacto */}
       <div className="floating-contact">
         <a href="/contact" className="flex items-center gap-2">
           <FaCommentDots />

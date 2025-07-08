@@ -1,3 +1,40 @@
+.about-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-main {
+  position: relative;
+  flex: 1;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Oscurece para que el texto sea legible */
+  z-index: 1;
+}
+
+.content-container {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté encima de la imagen y del overlay */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 .floating-contact {
   position: fixed;
   bottom: 20px;
@@ -23,27 +60,6 @@
 .floating-contact a:hover {
   animation: none;
   transform: scale(1.1);
-}
-.side-image-container {
-  width: 20vw;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  position: relative;
-  z-index: 1;
-}
-
-.side-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.side-image-container img:hover {
-  transform: scale(1.05);
 }
 
 @keyframes pulse {
