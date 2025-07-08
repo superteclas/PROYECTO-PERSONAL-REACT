@@ -21,7 +21,7 @@ const logos = [
   logo1,
   logo2,
   logo3,
-  logo4,
+  logo13,
   logo5,
   logo6,
   logo7,
@@ -30,7 +30,7 @@ const logos = [
   logo10,
   logo11,
   logo12,
-  logo13,
+  logo4,
   logo14,
   
   

@@ -29,7 +29,7 @@
 .content-container {
   position: relative;
   z-index: 2; /* Asegura que el texto esté encima de la imagen y del overlay */
-  max-width: 1000px;
+  max-width: 4000px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;

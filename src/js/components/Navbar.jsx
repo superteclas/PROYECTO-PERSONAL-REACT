@@ -1,9 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../img/logonormalsinfondo.png";
 import "../../styles/navbar.css";
 
 export const Navbar = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -29,6 +32,13 @@ export const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
+            {
+              !isHome && (
+                <li className="nav-item">
+                  <NavLink to="/" className="nav-link">Inicio</NavLink>
+                </li>
+              )
+            }
             <li className="nav-item">
               <NavLink to="/about" className="nav-link">Sobre mí</NavLink>
             </li>
