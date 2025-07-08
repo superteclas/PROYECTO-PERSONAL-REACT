@@ -36,7 +36,7 @@ const Multimedia = () => {
         <div className="my-8 w-full max-w-6xl mx-auto aspect-video">
           <iframe
             className="w-full h-full rounded-2xl shadow-lg"
-            src="https://www.youtube.com/embed/Eb6yGW3JNw8?si=_k-Is1TsCyUQqI50"
+            src="https://www.youtube.com/embed/xrwuyWsBwR0"
             title="Video principal"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
