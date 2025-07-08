@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+
 import logo1 from  "../../img/logos/capo.png";
 import logo2 from  "../../img/logos/black.png";
 import logo3 from  "../../img/logos/consigo.png";
@@ -14,26 +15,24 @@ import logo9 from  "../../img/logos/polop.png";
 import logo10 from  "../../img/logos/babalu.png";
 import logo11 from  "../../img/logos/adlibitum.png";
 import logo12 from  "../../img/logos/Popladies.png";
-import logo13 from "../../img/logos/rockbeat.png"
-import logo14 from "../../img/logos/hive.png"
+import logo13 from  "../../img/logos/rockbeat.png";
+import logo14 from  "../../img/logos/hive.png";
 
 const logos = [
-  logo1,
-  logo2,
-  logo3,
-  logo13,
-  logo5,
-  logo6,
-  logo7,
-  logo8, 
-  logo9,
-  logo10,
-  logo11,
-  logo12,
-  logo4,
-  logo14,
-  
-  
+  logo1,  // capo
+  logo2,  // black
+  logo3,  // consigo
+  logo13, // rockbeat
+  logo5,  // glitter
+  logo6,  // Marriot
+  logo7,  // rock
+  logo8,  // tribu
+  logo9,  // polop
+  logo10, // babalu
+  logo11, // adlibitum
+  logo12, // Popladies
+  logo4,  // eventime
+  logo14, // hive
 ];
 
 const LogoCarousel = () => {
@@ -53,75 +52,61 @@ const LogoCarousel = () => {
     ]
   };
 
-  const duplicatedLogos = [...logos, ...logos];
-
   return (
     <div style={{ width: '100vw', overflow: 'hidden', backgroundColor: '#f8f9fa', padding: '1rem 0' }}>
       <Slider {...settings}>
-        {duplicatedLogos.map((logo, index) => {
-          // Tamaño base
+        {logos.map((logo, index) => {
           let imgStyle = {
             width: '100%',
             maxHeight: '100px',
             objectFit: 'contain',
           };
 
-          if (index % logos.length === 0) {
-            imgStyle.maxHeight = '130px';
+          if (index === 0) {
+            imgStyle.maxHeight = '130px'; // capo
           }
-          if (index % logos.length === 1) {
-            imgStyle.maxHeight = '130px';
+          if (index === 1) {
+            imgStyle.maxHeight = '130px'; // black
           }
-          if (index % logos.length === 2) {
-            imgStyle.maxHeight = '90px';
+          if (index === 2) {
+            imgStyle.maxHeight = '90px'; // consigo
           }
-          if (index % logos.length === 3) {
-            imgStyle.maxHeight = '40px';
+          if (index === 3) {
+            imgStyle.maxHeight = '40px'; // rockbeat
           }
-          if (index % logos.length === 4) {
-            imgStyle.maxHeight = '100px';
+          if (index === 4) {
+            imgStyle.maxHeight = '100px'; // glitter
           }
-          if (index % logos.length === 5) {
-            imgStyle.maxHeight = '130px';
+          if (index === 5) {
+            imgStyle.maxHeight = '130px'; // Marriot
           }
-          if (index % logos.length === 6) {
-            imgStyle.maxHeight = '100px';
+          if (index === 6) {
+            imgStyle.maxHeight = '100px'; // rock
           }
-          if (index % logos.length === 7) {
+          if (index === 7) {
             imgStyle.maxHeight = '60px';
+            imgStyle.marginTop = '19px'; // tribu
           }
-
-          if (index % logos.length === 8) {
-            imgStyle.maxHeight = '90 px';
+          if (index === 8) {
+            imgStyle.maxHeight = '90px'; // polop
           }
-
-         
-          if (index % logos.length === 9) {
-            imgStyle.maxHeight = '100px';
+          if (index === 9) {
+            imgStyle.maxHeight = '100px'; // babalu
           }
-          if (index % logos.length === 10) {
-            imgStyle.maxHeight = '100px';
+          if (index === 10) {
+            imgStyle.maxHeight = '100px'; // adlibitum
           }
-          if (index % logos.length === 11) {
+          if (index === 11) {
+            imgStyle.maxHeight = '70px'; // Popladies
+          }
+          if (index === 12) {
+            imgStyle.maxHeight = '90px'; // eventime
+            imgStyle.marginTop = '5px';
+          }
+          if (index === 13) {
             imgStyle.maxHeight = '70px';
+            imgStyle.marginTop = '19px'; // hive
           }
-
-
-          if (index % logos.length === 12) {
-  imgStyle.maxHeight = '40px';
-  imgStyle.marginTop = '19px';
-}
-
-if (index % logos.length === 13) {
-            imgStyle.marginbottom = '100px';
-          }
-          if (index % logos.length === 14) {
-            imgStyle.maxHeight = '70px';
-          }
-           if (index % logos.length === 15) {
-            imgStyle.maxHeight = '70px';
-          }
-
 
           return (
             <div key={index} style={{ padding: 0 }}>
