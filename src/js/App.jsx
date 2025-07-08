@@ -1,84 +1,50 @@
 import React, { useEffect, useState } from "react";
-
-
-
 import { Routes, Route, useLocation } from "react-router-dom";
 
-
-
-
 import Home from "./pages/Home.jsx";
-
 import Contact from "./pages/Contact.jsx";
-
 import About from "./pages/About.jsx";
-
 import Multimedia from "./pages/Multimedia.jsx";
-
-
-
 
 import PianoLoader from "./components/PianoLoader.jsx";
 
-
-
-
 const App = () => {
-
-
   const location = useLocation();
-
-
   const [loading, setLoading] = useState(true);
-
-
-
-
-
-  // Muestra el loader en cada cambio de ruta
-
+  const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
 
   useEffect(() => {
+    const loaderShown = localStorage.getItem("pianoLoaderShown");
 
+    if (loaderShown) {
+      // Ya se mostró el loader antes, no mostrarlo ahora
+      setLoading(false);
+      setHasLoadedOnce(true);
+    } else {
+      // Mostrar loader la primera vez
+      setLoading(true);
 
-    setLoading(true);
+      const timer = setTimeout(() => {
+        setLoading(false);
+        setHasLoadedOnce(true);
+        localStorage.setItem("pianoLoaderShown", "true");
+      }, 2000); // Duración loader
 
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
-    const timer = setTimeout(() => setLoading(false), 2000); // 2 segundos de carga simulada
-
-
-    return () => clearTimeout(timer);
-
-
-  }, [location.pathname]);
-
-
-
-
-
-  if (loading) return <PianoLoader visible={true} />;
-
-
-
+  // Si ya hemos cargado una vez, no mostrar loader más en cambios de ruta
+  if (loading && !hasLoadedOnce) return <PianoLoader visible={true} />;
 
   return (
-
     <Routes>
-
       <Route path="/" element={<Home />} />
-
       <Route path="/contact" element={<Contact />} />
-
       <Route path="/about" element={<About />} />
-
       <Route path="/multimedia" element={<Multimedia />} />
-
     </Routes>
-
   );
-
 };
-
-
 
 export default App;

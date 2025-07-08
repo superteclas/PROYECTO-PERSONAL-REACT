@@ -22,7 +22,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* Oscurece para que el texto sea legible */
+  background: rgba(0, 0, 0, 0.561); /* Oscurece para que el texto sea legible */
   z-index: 1;
 }
 
