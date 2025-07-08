@@ -72,7 +72,8 @@ const LogoCarousel = () => {
             imgStyle.maxHeight = '90px'; // consigo
           }
           if (index === 3) {
-            imgStyle.maxHeight = '40px'; // rockbeat
+            imgStyle.maxHeight = '40px';
+            imgStyle.marginTop = '25px'; // rockbeat
           }
           if (index === 4) {
             imgStyle.maxHeight = '100px'; // glitter
@@ -88,7 +89,8 @@ const LogoCarousel = () => {
             imgStyle.marginTop = '19px'; // tribu
           }
           if (index === 8) {
-            imgStyle.maxHeight = '90px'; // polop
+            imgStyle.maxHeight = '75px';
+            imgStyle.marginTop = '19px'; // polop
           }
           if (index === 9) {
             imgStyle.maxHeight = '100px'; // babalu
@@ -97,7 +99,8 @@ const LogoCarousel = () => {
             imgStyle.maxHeight = '100px'; // adlibitum
           }
           if (index === 11) {
-            imgStyle.maxHeight = '70px'; // Popladies
+            imgStyle.maxHeight = '70px';
+            imgStyle.marginTop = '19px'; // Popladies
           }
           if (index === 12) {
             imgStyle.maxHeight = '90px'; // eventime
