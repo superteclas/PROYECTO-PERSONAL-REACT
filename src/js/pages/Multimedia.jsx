@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import "../../styles/multimedia.css";
 
 const Multimedia = () => {
   const videos = [
@@ -60,13 +61,29 @@ const Multimedia = () => {
           {/* Contenedor carrusel */}
           <div
             ref={scrollRef}
-            className="flex flex-row space-x-4 overflow-x-auto no-scrollbar scroll-smooth"
-            style={{ scrollBehavior: "smooth" }}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              overflowX: "auto",
+              scrollBehavior: "smooth",
+              gap: "1rem",
+              paddingBottom: "1rem",
+              scrollbarWidth: "none", // Firefox
+            }}
+            className="no-scrollbar"
           >
             {videos.map((video, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[320px] md:w-[400px] aspect-video rounded-xl shadow-lg overflow-hidden"
+                style={{
+                  flexShrink: 0,
+                  width: "320px",
+                  aspectRatio: "16 / 9",
+                  borderRadius: "1rem",
+                  overflow: "hidden",
+                  boxShadow:
+                    "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06)",
+                }}
               >
                 <iframe
                   className="w-full h-full"
