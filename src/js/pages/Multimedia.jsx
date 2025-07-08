@@ -45,22 +45,14 @@ const Multimedia = () => {
           ></iframe>
         </div>
 
-        {/* 🎠 Carrusel con botones */}
-        <div className="mt-10 px-4 mb-20 text-left relative max-w-full">
+        {/* 🎠 Carrusel */}
+        <div className="mt-10 px-4 mb-6 text-left relative max-w-full">
           <h2 className="text-2xl font-semibold mb-4">Más videos</h2>
-
-          {/* Botón Izquierda */}
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-100"
-            aria-label="Scroll left"
-          >
-            ◀
-          </button>
 
           {/* Contenedor carrusel */}
           <div
             ref={scrollRef}
+            className="no-scrollbar scroll-container"
             style={{
               display: "flex",
               flexDirection: "row",
@@ -68,9 +60,7 @@ const Multimedia = () => {
               scrollBehavior: "smooth",
               gap: "1rem",
               paddingBottom: "1rem",
-              scrollbarWidth: "none", // Firefox
             }}
-            className="no-scrollbar"
           >
             {videos.map((video, index) => (
               <div
@@ -98,14 +88,42 @@ const Multimedia = () => {
             ))}
           </div>
 
-          {/* Botón Derecha */}
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-100"
-            aria-label="Scroll right"
-          >
-            ▶
-          </button>
+          {/* Botones debajo */}
+          <div className="scroll-buttons-container">
+            <button
+              onClick={() => scroll("left")}
+              aria-label="Scroll left"
+              className="scroll-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <button
+              onClick={() => scroll("right")}
+              aria-label="Scroll right"
+              className="scroll-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
