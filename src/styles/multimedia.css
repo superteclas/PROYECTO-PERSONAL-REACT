@@ -1,12 +1,19 @@
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+/* ========== Scroll oculto para carruseles ========== */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
 }
 
-/* Botones modernos para scroll */
+/* ========== Contenedor con scroll suave ========== */
+.scroll-container {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Mejor para iOS */
+}
+
+/* ========== Botones de scroll estilizados ========== */
 .scroll-button {
   background: linear-gradient(90deg, #939295, #565657);
   color: white;
@@ -34,7 +41,7 @@
     0 10px 10px -5px rgba(145, 144, 147, 0.6);
 }
 
-/* Contenedor botones debajo del carrusel */
+/* ========== Contenedor de los botones debajo del carrusel ========== */
 .scroll-buttons-container {
   display: flex;
   justify-content: center;
@@ -42,10 +49,7 @@
   margin-top: 2rem;
 }
 
-/* Scroll suave */
-.scroll-container {
-  scroll-behavior: smooth;
-}
+/* ✅ Botón flotante de contacto original */
 .floating-contact {
   position: fixed;
   bottom: 20px;
@@ -82,5 +86,16 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* ========== Responsividad general ========== */
+@media (max-width: 640px) {
+  .scroll-buttons-container {
+    display: none;
+  }
+
+  .scroll-button {
+    display: none;
   }
 }

@@ -7,11 +7,11 @@ import "../../styles/multimedia.css";
 const Multimedia = () => {
   const videos = [
     { id: "Eb6yGW3JNw8", title: "Video 1" },
-    { id: "Eb6yGW3JNw8", title: "Video 2" },
-    { id: "Eb6yGW3JNw8", title: "Video 3" },
-    { id: "Eb6yGW3JNw8", title: "Video 4" },
-    { id: "Eb6yGW3JNw8", title: "Video 5" },
-    { id: "Eb6yGW3JNw8", title: "Video 6" },
+    { id: "dQw4w9WgXcQ", title: "Video 2" },
+    { id: "tgbNymZ7vqY", title: "Video 3" },
+    { id: "9bZkp7q19f0", title: "Video 4" },
+    { id: "kxopViU98Xo", title: "Video 5" },
+    { id: "C0DPdy98e4c", title: "Video 6" },
   ];
 
   const scrollRef = useRef(null);
@@ -29,7 +29,7 @@ const Multimedia = () => {
     <div className="d-flex flex-column min-vh-100" style={{ position: "relative" }}>
       <Navbar />
 
-      <div className="text-center mt-5 px-3">
+      <main className="text-center mt-5 px-3">
         <h1 className="text-4xl font-bold">MULTIMEDIA</h1>
         <p className="text-lg mt-2">Explora contenido visual de alta calidad.</p>
 
@@ -58,7 +58,6 @@ const Multimedia = () => {
               display: "flex",
               flexDirection: "row",
               overflowX: "auto",
-              scrollBehavior: "smooth",
               gap: "1rem",
               paddingBottom: "1rem",
             }}
@@ -72,8 +71,7 @@ const Multimedia = () => {
                   aspectRatio: "16 / 9",
                   borderRadius: "1rem",
                   overflow: "hidden",
-                  boxShadow:
-                    "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06)",
+                  boxShadow: "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06)",
                 }}
               >
                 <iframe
@@ -89,7 +87,7 @@ const Multimedia = () => {
             ))}
           </div>
 
-          {/* Botones debajo */}
+          {/* Botones de scroll */}
           <div className="scroll-buttons-container">
             <button
               onClick={() => scroll("left")}
@@ -126,11 +124,11 @@ const Multimedia = () => {
             </button>
           </div>
         </div>
-      </div>
+      </main>
 
       <Footer />
 
-      {/* Botón flotante de contacto */}
+      {/* 💬 Botón flotante de contacto */}
       <div className="floating-contact">
         <a href="/contact">
           <FaCommentDots />
