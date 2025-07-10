@@ -6,13 +6,13 @@ import "../../styles/multimedia.css";
 
 const Multimedia = () => {
   const videos = [
-  { id: "Eb6yGW3JNw8", title: "Inspiración Visual" },
-  { id: "QNL_3l6X_GU", title: "Corto Creativo" },
-  { id: "3ORS9qK6bEc", title: "Arte y Perspectiva" },
-  { id: "_Wqo0eP72o4", title: "Narrativa Visual" },
-  { id: "ZvRaxSpt5D4", title: "Cine Experimental" },
-  { id: "OCOcELEiyDQ", title: "Documental Breve" },
-];
+    { id: "Eb6yGW3JNw8", title: "Inspiración Visual" },
+    { id: "QNL_3l6X_GU", title: "Corto Creativo" },
+    { id: "3ORS9qK6bEc", title: "Arte y Perspectiva" },
+    { id: "_Wqo0eP72o4", title: "Narrativa Visual" },
+    { id: "ZvRaxSpt5D4", title: "Cine Experimental" },
+    { id: "OCOcELEiyDQ", title: "Documental Breve" },
+  ];
 
   const scrollRef = useRef(null);
 
@@ -30,15 +30,14 @@ const Multimedia = () => {
       <Navbar />
 
       <main className="text-center mt-5 px-3">
-         <h1 className="text-4xl font-bold text-black">Videos</h1>
- 
+        <h1 className="text-4xl font-bold text-black">Videos</h1>
+        <p className="text-lg mt-2 text-black">Explora contenido visual de alta calidad.</p>
 
-
-        {/* 🎬 Video principal */}
+        {/* 🎬 Video principal FIJO */}
         <div className="my-8 w-full max-w-6xl mx-auto aspect-video">
           <iframe
             className="w-full h-full rounded-2xl shadow-lg"
-            src="https://www.youtube.com/embed/xrwuyWsBwR0"
+            src={`https://www.youtube.com/embed/xrwuyWsBwR0`} // Video fijo arriba
             title="Video principal"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -47,11 +46,10 @@ const Multimedia = () => {
           ></iframe>
         </div>
 
-        {/* 🎠 Carrusel */}
+        {/* 🎠 Carrusel con iframes integrados */}
         <div className="mt-10 px-4 mb-6 text-left relative max-w-full">
           <h2 className="text-2xl font-semibold mb-4 text-black">Más videos</h2>
 
-          {/* Contenedor carrusel */}
           <div
             ref={scrollRef}
             className="no-scrollbar scroll-container"
@@ -73,6 +71,7 @@ const Multimedia = () => {
                   borderRadius: "1rem",
                   overflow: "hidden",
                   boxShadow: "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06)",
+                  cursor: "default",
                 }}
               >
                 <iframe
@@ -95,14 +94,7 @@ const Multimedia = () => {
               aria-label="Scroll left"
               className="scroll-button"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -112,14 +104,7 @@ const Multimedia = () => {
               aria-label="Scroll right"
               className="scroll-button"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
