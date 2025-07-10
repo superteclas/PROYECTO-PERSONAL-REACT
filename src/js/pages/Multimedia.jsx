@@ -6,13 +6,13 @@ import "../../styles/multimedia.css";
 
 const Multimedia = () => {
   const videos = [
-    { id: "Eb6yGW3JNw8", title: "Video 1" },
-    { id: "dQw4w9WgXcQ", title: "Video 2" },
-    { id: "tgbNymZ7vqY", title: "Video 3" },
-    { id: "9bZkp7q19f0", title: "Video 4" },
-    { id: "kxopViU98Xo", title: "Video 5" },
-    { id: "C0DPdy98e4c", title: "Video 6" },
-  ];
+  { id: "Eb6yGW3JNw8", title: "Inspiración Visual" },
+  { id: "QNL_3l6X_GU", title: "Corto Creativo" },
+  { id: "3ORS9qK6bEc", title: "Arte y Perspectiva" },
+  { id: "_Wqo0eP72o4", title: "Narrativa Visual" },
+  { id: "ZvRaxSpt5D4", title: "Cine Experimental" },
+  { id: "OCOcELEiyDQ", title: "Documental Breve" },
+];
 
   const scrollRef = useRef(null);
 
@@ -30,8 +30,9 @@ const Multimedia = () => {
       <Navbar />
 
       <main className="text-center mt-5 px-3">
-        <h1 className="text-4xl font-bold">MULTIMEDIA</h1>
-        <p className="text-lg mt-2">Explora contenido visual de alta calidad.</p>
+         <h1 className="text-4xl font-bold text-black">Videos</h1>
+ 
+
 
         {/* 🎬 Video principal */}
         <div className="my-8 w-full max-w-6xl mx-auto aspect-video">
@@ -48,7 +49,7 @@ const Multimedia = () => {
 
         {/* 🎠 Carrusel */}
         <div className="mt-10 px-4 mb-6 text-left relative max-w-full">
-          <h2 className="text-2xl font-semibold mb-4">Más videos</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-black">Más videos</h2>
 
           {/* Contenedor carrusel */}
           <div
