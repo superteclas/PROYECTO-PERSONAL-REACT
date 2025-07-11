@@ -36,7 +36,7 @@ const Multimedia = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Overlay oscuro para que fondo no compita */}
+      {/* Overlay oscuro */}
       <div
         style={{
           position: "absolute",
@@ -58,7 +58,6 @@ const Multimedia = () => {
 
           {/* 🎬 Video principal centrado */}
           <div
-            className="my-8 mx-auto"
             style={{
               width: "90vw",
               maxWidth: "960px",
@@ -66,15 +65,12 @@ const Multimedia = () => {
               borderRadius: "1.5rem",
               overflow: "hidden",
               boxShadow: "0 10px 25px rgba(0,0,0,0.7)",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
               marginLeft: "auto",
               marginRight: "auto",
             }}
           >
             <iframe
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "100%", height: "100%", display: "block" }}
               src="https://www.youtube.com/embed/xrwuyWsBwR0"
               title="Video principal"
               frameBorder="0"
