@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { FaCommentDots } from "react-icons/fa";
+import fondo from "../../img/sintes.jpg"; // ✅ Importación de la imagen de fondo
 import "../../styles/multimedia.css";
 
 const Multimedia = () => {
@@ -26,7 +27,16 @@ const Multimedia = () => {
   };
 
   return (
-    <div className="d-flex flex-column min-vh-100" style={{ position: "relative" }}>
+    <div
+      className="d-flex flex-column min-vh-100"
+      style={{
+        position: "relative",
+        backgroundImage: `url(${fondo})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <Navbar />
 
       <main className="text-center mt-5 px-3">
@@ -37,7 +47,7 @@ const Multimedia = () => {
         <div className="my-8 w-full max-w-6xl mx-auto aspect-video">
           <iframe
             className="w-full h-full rounded-2xl shadow-lg"
-            src={`https://www.youtube.com/embed/xrwuyWsBwR0`} // Video fijo arriba
+            src="https://www.youtube.com/embed/xrwuyWsBwR0"
             title="Video principal"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
