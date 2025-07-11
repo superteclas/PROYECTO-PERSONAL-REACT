@@ -20,7 +20,7 @@ const Multimedia = () => {
   const scroll = (direction) => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
-        left: direction === "left" ? -400 : 400,
+        left: direction === "left" ? -300 : 300,
         behavior: "smooth",
       });
     }
@@ -53,7 +53,6 @@ const Multimedia = () => {
           {/* Texto sin fondo */}
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-2">Videos</h1>
-            
           </div>
 
           {/* 🎬 Contenedor flex para centrar el video principal */}
@@ -103,6 +102,7 @@ const Multimedia = () => {
                 paddingBottom: "1rem",
                 paddingLeft: "1rem",
                 paddingRight: "1rem",
+                scrollSnapType: "x mandatory",
               }}
             >
               {videos.map((video, index) => (
@@ -111,13 +111,16 @@ const Multimedia = () => {
                   style={{
                     flexShrink: 0,
                     width: "400px",
+                    maxWidth: "90vw",
                     aspectRatio: "16 / 9",
                     borderRadius: "1rem",
                     overflow: "hidden",
                     background: "rgba(0, 0, 0, 0.3)",
-                    boxShadow: "0 8px 20px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3)",
+                    boxShadow:
+                      "0 8px 20px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3)",
                     cursor: "pointer",
                     transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                    scrollSnapAlign: "start",
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = "scale(1.05)";
@@ -169,7 +172,11 @@ const Multimedia = () => {
                   stroke="white"
                   strokeWidth={2}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
                 </svg>
               </button>
 
@@ -193,7 +200,11 @@ const Multimedia = () => {
                   stroke="white"
                   strokeWidth={2}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </button>
             </div>
