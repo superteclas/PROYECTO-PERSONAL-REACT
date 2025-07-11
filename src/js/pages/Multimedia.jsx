@@ -53,7 +53,7 @@ const Multimedia = () => {
           {/* Texto sin fondo */}
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-2">Videos</h1>
-            <p className="text-lg">Explora contenido visual de alta calidad.</p>
+            
           </div>
 
           {/* 🎬 Contenedor flex para centrar el video principal */}
@@ -88,7 +88,7 @@ const Multimedia = () => {
 
           {/* 🎠 Carrusel de videos */}
           <div className="mt-10 px-4 mb-6 text-left relative max-w-full">
-            <div className="max-w-7xl mx-auto p-4 rounded-xl text-white mb-4 bg-black bg-opacity-30">
+            <div className="max-w-7xl mx-auto text-white mt-5 mb-4 ">
               <h2 className="text-2xl font-semibold">Más videos</h2>
             </div>
 
