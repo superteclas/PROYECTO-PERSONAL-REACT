@@ -56,28 +56,34 @@ const Multimedia = () => {
             <p className="text-lg">Explora contenido visual de alta calidad.</p>
           </div>
 
-          {/* 🎬 Video principal centrado */}
+          {/* 🎬 Contenedor flex para centrar el video principal */}
           <div
             style={{
-              width: "90vw",
-              maxWidth: "960px",
-              aspectRatio: "16 / 9",
-              borderRadius: "1.5rem",
-              overflow: "hidden",
-              boxShadow: "0 10px 25px rgba(0,0,0,0.7)",
-              marginLeft: "auto",
-              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "2rem",
             }}
           >
-            <iframe
-              style={{ width: "100%", height: "100%", display: "block" }}
-              src="https://www.youtube.com/embed/xrwuyWsBwR0"
-              title="Video principal"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
+            <div
+              style={{
+                width: "90vw",
+                maxWidth: "960px",
+                aspectRatio: "16 / 9",
+                borderRadius: "1.5rem",
+                overflow: "hidden",
+                boxShadow: "0 10px 25px rgba(0,0,0,0.7)",
+              }}
+            >
+              <iframe
+                style={{ width: "100%", height: "100%", display: "block" }}
+                src="https://www.youtube.com/embed/xrwuyWsBwR0"
+                title="Video principal"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
           </div>
 
           {/* 🎠 Carrusel de videos */}
