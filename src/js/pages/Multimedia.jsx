@@ -36,7 +36,7 @@ const Multimedia = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Overlay oscuro */}
+      {/* Overlay oscuro para que fondo no compita */}
       <div
         style={{
           position: "absolute",
@@ -44,41 +44,49 @@ const Multimedia = () => {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
           zIndex: 0,
         }}
-      ></div>
+      />
 
       <div style={{ position: "relative", zIndex: 1 }}>
-
         <Navbar />
 
-        <main className="text-center mt-5 px-3 text-white">
-          {/* Fondo translúcido para el bloque de título */}
-          <div
-            className="max-w-3xl mx-auto p-4 rounded-xl mb-8"
-            
-          >
+        <main className="text-center mt-5 px-3 text-white max-w-7xl mx-auto">
+          {/* Texto sin fondo */}
+          <div className="mb-8">
             <h1 className="text-4xl font-bold mb-2">Videos</h1>
             <p className="text-lg">Explora contenido visual de alta calidad.</p>
           </div>
 
-          {/* 🎬 Video principal */}
-          <div className="my-8 w-full max-w-6xl mx-auto aspect-video">
+          {/* 🎬 Video principal centrado */}
+          <div
+            className="my-8 mx-auto"
+            style={{
+              width: "90vw",
+              maxWidth: "960px",
+              aspectRatio: "16 / 9",
+              borderRadius: "1.5rem",
+              overflow: "hidden",
+              boxShadow: "0 10px 25px rgba(0,0,0,0.7)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
             <iframe
-              className="w-full h-full rounded-2xl shadow-lg"
+              style={{ width: "100%", height: "100%" }}
               src="https://www.youtube.com/embed/xrwuyWsBwR0"
               title="Video principal"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-            ></iframe>
+            />
           </div>
 
           {/* 🎠 Carrusel de videos */}
           <div className="mt-10 px-4 mb-6 text-left relative max-w-full">
-            <div
-              className="max-w-7xl mx-auto p-4 rounded-xl text-white mb-4"
-              
-            >
+            <div className="max-w-7xl mx-auto p-4 rounded-xl text-white mb-4 bg-black bg-opacity-30">
               <h2 className="text-2xl font-semibold">Más videos</h2>
             </div>
 
@@ -89,8 +97,10 @@ const Multimedia = () => {
                 display: "flex",
                 flexDirection: "row",
                 overflowX: "auto",
-                gap: "1rem",
+                gap: "1.5rem",
                 paddingBottom: "1rem",
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
               }}
             >
               {videos.map((video, index) => (
@@ -98,35 +108,65 @@ const Multimedia = () => {
                   key={index}
                   style={{
                     flexShrink: 0,
-                    width: "320px",
+                    width: "400px",
                     aspectRatio: "16 / 9",
                     borderRadius: "1rem",
                     overflow: "hidden",
-                    boxShadow: "0 4px 6px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.2)",
-                    cursor: "default",
+                    background: "rgba(0, 0, 0, 0.3)",
+                    boxShadow: "0 8px 20px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3)",
+                    cursor: "pointer",
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "scale(1.05)";
+                    e.currentTarget.style.boxShadow =
+                      "0 12px 30px rgba(0,0,0,0.7)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "scale(1)";
+                    e.currentTarget.style.boxShadow =
+                      "0 8px 20px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3)";
                   }}
                 >
                   <iframe
-                    className="w-full h-full"
+                    style={{ width: "100%", height: "100%" }}
                     src={`https://www.youtube.com/embed/${video.id}`}
                     title={video.title}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
-                  ></iframe>
+                  />
                 </div>
               ))}
             </div>
 
             {/* Botones de scroll */}
-            <div className="scroll-buttons-container">
+            <div
+              className="scroll-buttons-container"
+              style={{ textAlign: "center", marginTop: "1rem" }}
+            >
               <button
                 onClick={() => scroll("left")}
                 aria-label="Scroll left"
                 className="scroll-button"
+                style={{
+                  background: "rgba(0,0,0,0.5)",
+                  borderRadius: "50%",
+                  padding: "0.5rem",
+                  marginRight: "1rem",
+                  cursor: "pointer",
+                  border: "none",
+                }}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="white"
+                  strokeWidth={2}
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
@@ -135,8 +175,22 @@ const Multimedia = () => {
                 onClick={() => scroll("right")}
                 aria-label="Scroll right"
                 className="scroll-button"
+                style={{
+                  background: "rgba(0,0,0,0.5)",
+                  borderRadius: "50%",
+                  padding: "0.5rem",
+                  cursor: "pointer",
+                  border: "none",
+                }}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="white"
+                  strokeWidth={2}
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
