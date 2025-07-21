@@ -22,20 +22,20 @@ const logos = [
 ];
 
 const logoLinks = [
-  "https://www.dacapomusic.es/",
-  "https://www.blacknoteclub.com/",
-  "https://quetecosigo.com/",
-  "https://www.rockandbeat.com/",
-  "https://www.instagram.com/blackglittercoverband/",
-  "https://www.marriott.com/en-us/hotels/vlcwi-the-westin-valencia/",
-  "https://www.rockfm.fm/",
-  "https://www.produccionestribu.com/",
-  "https://escueladeartistas.es/",
-  "https://www.instagram.com/babaluswingband/",
-  "https://adlibitum.es/",
-  "https://www.instagram.com/ladieselshow/",
-  "https://eventime.es/",
-  "https://hivestudio.es/",
+  "https://www.dacapomusic.es/",                            // logo1
+  "http://www.babaluswingband.com/",             // logo10
+  "https://www.instagram.com/tributopopladies/",                // logo12
+  "https://www.rockandbeat.com/",                           // logo13
+  "https://www.instagram.com/blackglittercoverband/",       // logo5
+  "https://www.blacknoteclub.com/",                         // logo2
+  "https://www.rockfm.fm/",                                 // logo7
+  "https://espectaculoslatribu.com/",                     // logo8
+  "https://escueladeartistasbysandrapolop.com/",                          // logo9
+  "https://www.marriott.com/en-us/hotels/vlcwi-the-westin-valencia/", // logo6
+  "https://adlibitum.es/",                                  // logo11
+  "https://queteconsigo.com/",                               // logo3
+  "https://eventime.es/",                                   // logo4
+  "https://www.hiverecordingstudio.com/",                                 // logo14
 ];
 
 const LogoCarousel = () => {
