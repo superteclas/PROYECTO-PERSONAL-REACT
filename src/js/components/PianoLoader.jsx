@@ -1,6 +1,6 @@
 // PianoLoader.jsx
 import React from "react";
-import "../../styles/PianoLoader.css";
+import "../../styles/pianoloader.css";
 
 export default function PianoLoader({ visible }) {
   return (
