@@ -160,7 +160,7 @@ const Home = () => {
               <p>
 
 
-                Soy un músico polivalente con experiencia en una amplia gama de estilos. Me dedico a la interpretación en vivo para conciertos y eventos, y también ofrezco arreglos musicales y colaboraciones como músico de estudio. Imparto clases de piano, tanto presenciales como online, y realizo grabaciones desde casa, adaptándome a las necesidades de cada proyecto. Mi enfoque une técnica, emoción y versatilidad para lograr una expresión musical auténtica.
+                Soy un músico polivalente con experiencia en una amplia gama de estilos. Me dedico a la interpretación en vivo para conciertos y eventos, también ofrezco arreglos musicales además de colaboraciones como músico de estudio. Imparto clases particulares de piano, tanto presenciales como online, y realizo grabaciones desde casa, adaptándome a las necesidades de cada proyecto. Mi enfoque une técnica, emoción y versatilidad para lograr una expresión musical auténtica.
 
 
               </p>
