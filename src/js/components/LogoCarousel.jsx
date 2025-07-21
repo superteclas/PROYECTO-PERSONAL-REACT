@@ -17,8 +17,8 @@ import logo13 from "../../img/logos/rockbeat.png";
 import logo14 from "../../img/logos/hive.png";
 
 const logos = [
-  logo1, logo2, logo3, logo13, logo5, logo10, logo7,
-  logo8, logo9, logo6, logo11, logo12, logo4, logo14,
+  logo1, logo10, logo12, logo13, logo5, logo2, logo7,
+  logo8, logo9, logo6, logo11, logo3, logo4, logo14,
 ];
 
 const logoLinks = [
