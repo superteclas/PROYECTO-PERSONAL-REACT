@@ -7,7 +7,7 @@
 
 .carousel-track {
   display: flex;
-  animation: scroll 25s linear infinite;
+  animation: scroll 22s linear infinite;
   gap: 9rem; /* controla el espacio lateral */
   align-items: center;
 }
