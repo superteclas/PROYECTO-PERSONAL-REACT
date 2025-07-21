@@ -6,7 +6,7 @@ Comienza a codificar una aplicación con React.
 
 > Si estás trabajando localmente en lugar de usar Codespaces o Gitpod, por favor sigue los [pasos de instalación local](#instalación-local-sáltalo-si-estás-trabajando-en-codespaces-o-gitpod) y regresa a esta parte del README.
 
-## ¿Cómo comenzar a codificar?
+## ¿Cómo comenzar a codificar?''''
 
 - Instala los paquetes con `$ npm install`.
 - Ejecuta el servidor de webpack con `$ npm run start`.
