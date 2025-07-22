@@ -1,39 +1,55 @@
-# Hello World with React boilerplate
+# Álvaro Ponce Keys 🎹 | Web Profesional
 
-Start coding a react application
+<img width="1689" height="838" alt="Captura de Pantalla 2025-07-22 a las 10 05 30" src="https://github.com/user-attachments/assets/3445110c-a199-4be9-9089-270b8728e10a" />
 
-> If you are working locally instead of using codespaces or gitpod, please follow [local installation steps](#local-installation-skip-if-you-are-working-on-codespaces-or-gitpod) and come back to this part of the readme.
 
-## How to start coding?
+[🌐 Visitar el sitio web](https://alvaroponcekeys.com)
 
-- Install the packages with `$ npm install`.
-- Run the webpack server with `$ npm run start`
+Este es el repositorio del sitio web profesional de **Álvaro Ponce**, músico, arreglista y desarrollador full stack. Aquí se muestra su trayectoria artística, servicios musicales y contenido multimedia en una interfaz moderna y responsive.
 
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
+---
 
-## Local Installation (skip if you are working on codespaces or gitpod)
+## 🎯 Sobre el proyecto
 
-Download the boilerplate using git
+Esta web fue creada para:
 
-```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
-```
+- Mostrar el portafolio musical y técnico de Álvaro Ponce.
+- Ofrecer servicios como conciertos, clases, producción y arreglos.
+- Incluir contenido audiovisual con vídeos embebidos.
+- Facilitar el contacto directo (WhatsApp, Email, Instagram).
 
-## Publish your website!
+---
 
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
+## 🖼️ Capturas de pantalla
 
-It takes just 2 minutes to deploy, [click here to start the process](https://4geeks.com/docs/start/deploy-to-render-com).
+### 🏠 Página de inicio
+<img width="1689" height="838" alt="Captura de Pantalla 2025-07-22 a las 10 05 30" src="https://github.com/user-attachments/assets/3445110c-a199-4be9-9089-270b8728e10a" />
 
-## Other features
 
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
-- Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
+### 📱 Vista móvil
+<img width="374" height="771" alt="Captura de Pantalla 2025-07-22 a las 10 07 11" src="https://github.com/user-attachments/assets/47cb7ead-4009-45ce-9b11-b6a65e85cb49" />
 
-### Contributors
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+### 🎵 Sección de Multimedia
+<img width="1689" height="838" alt="Captura de Pantalla 2025-07-22 a las 10 06 16" src="https://github.com/user-attachments/assets/b7f53b6c-df25-4ca6-afcc-8a7525001abf" />
 
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+
+### 📬 Sección de contacto
+
+<img width="1689" height="838" alt="Captura de Pantalla 2025-07-22 a las 10 05 55" src="https://github.com/user-attachments/assets/eed12d09-d404-4185-a178-f5c364fe6465" />
+
+---
+
+## ⚙️ Tecnologías utilizadas
+
+- React (Vite)
+- Tailwind CSS + Bootstrap
+- Framer Motion
+- React Icons
+- YouTube Embed
+- HTML5 + CSS3
+
+---
+
+## Este proyecto fue desarrollado a partir de la plantilla Hello React de 4Geeks Academy como base para el entorno React.
+
