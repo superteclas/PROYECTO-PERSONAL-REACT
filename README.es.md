@@ -11,7 +11,7 @@ Comienza a codificar una aplicación con React.
 - Instala los paquetes con `$ npm install`.
 - Ejecuta el servidor de webpack con `$ npm run start`.
 
-Puedes actualizar los archivos `styles/index.css` o `js/index.js` dependiendo de tus necesidades.  
+ccPuedes actualizar los archivos `styles/index.css` o `js/index.js` dependiendo de tus necesidades.  
 Agrega más archivos en las carpetas `./src/js/components` o `styles` según los necesites.
 
 ## Instalación local (sáltalo si estás trabajando en Codespaces o Gitpod)
