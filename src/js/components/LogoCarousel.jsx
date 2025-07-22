@@ -15,9 +15,11 @@ import logo11 from "../../img/logos/adlibitum.png";
 import logo12 from "../../img/logos/Popladies.png";
 import logo13 from "../../img/logos/rockbeat.png";
 import logo14 from "../../img/logos/hive.png";
+import logo15 from "../../img/logos/fito.jpg";
+
 
 const logos = [
-  logo1, logo10, logo12, logo13, logo5, logo2, logo7,
+  logo1, logo10, logo12, logo13,logo15, logo5, logo2, logo7,
   logo8, logo9, logo6, logo11, logo3, logo4, logo14,
 ];
 
@@ -26,6 +28,7 @@ const logoLinks = [
   "http://www.babaluswingband.com/",             // logo10
   "https://www.instagram.com/tributopopladies/",                // logo12
   "https://www.rockandbeat.com/",                           // logo13
+  "https://www.instagram.com/fitipaldisbandtributo_/",       // logo15
   "https://www.instagram.com/blackglittercoverband/",       // logo5
   "https://www.blacknoteclub.com/",                         // logo2
   "https://www.rockfm.fm/",                                 // logo7
