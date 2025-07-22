@@ -42,7 +42,7 @@ const logoLinks = [
 ];
 
 const LogoCarousel = () => {
-  const repeatedLogos = [...logos, ...logos, ...logos]; // duplicar 3 veces
+  const repeatedLogos = [...logos, ...logos,...logos]; // duplicar 3 veces
   return (
     <div className="carousel-container">
       <div className="carousel-track">
