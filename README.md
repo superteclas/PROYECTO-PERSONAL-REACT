@@ -5,7 +5,7 @@
 
 [🌐 Visitar el sitio web](https://alvaroponcekeys.com)
 
-Este es el repositorio del sitio web profesional de **Álvaro Ponce**, músico, arreglista y desarrollador full stack. Aquí se muestra su trayectoria artística, servicios musicales y contenido multimedia en una interfaz moderna y responsive.
+Este es el repositorio de mi sitio web profesional **Álvaro Ponce**, músico, arreglista y desarrollador full stack. Aquí se muestra mi trayectoria artística, servicios musicales y contenido multimedia en una interfaz moderna y responsive.
 
 ---
 
@@ -13,7 +13,7 @@ Este es el repositorio del sitio web profesional de **Álvaro Ponce**, músico, 
 
 Esta web fue creada para:
 
-- Mostrar el portafolio musical y técnico de Álvaro Ponce.
+- Mostrar mi portafolio musical y técnico.
 - Ofrecer servicios como conciertos, clases, producción y arreglos.
 - Incluir contenido audiovisual con vídeos embebidos.
 - Facilitar el contacto directo (WhatsApp, Email, Instagram).
