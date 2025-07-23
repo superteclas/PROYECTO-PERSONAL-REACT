@@ -84,8 +84,15 @@ const Legal = () => {
         </p>
       </section>
 
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-2 text-black">8. USO DE LOGOS Y MARCAS DE TERCEROS</h2>
+        <p className="text-justify leading-relaxed text-sm">
+          Los logotipos mostrados en el carrusel de la página de inicio corresponden a empresas, marcas o entidades con las que el titular ha colaborado profesionalmente. Dichos logotipos se muestran con el consentimiento expreso de sus respectivos propietarios y con la única finalidad de ilustrar colaboraciones previas. En ningún caso se pretende implicar relación comercial continuada, representación exclusiva ni asociación institucional más allá del acuerdo puntual autorizado por las partes.
+        </p>
+      </section>
+
       <p className="text-right text-xs text-gray-600">
-        Última actualización: 22 de julio de 2025
+        Última actualización: 23 de julio de 2025
       </p>
     </div>
   );
