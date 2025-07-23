@@ -36,11 +36,7 @@ const Legal = () => {
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2 text-black">3. PROPIEDAD INTELECTUAL E INDUSTRIAL</h2>
         <p className="text-justify leading-relaxed text-sm">
-          Todas las fotografías utilizadas en este sitio web son de mi autoría, excepto la imagen del piano en la portada,
-          la cual es de uso libre y sin derechos de autor. Los iconos empleados provienen de recursos disponibles en
-          internet, y la tipografía utilizada corresponde a fuentes de Google Fonts. No obstante, el diseño general del
-          sitio, así como todos los demás contenidos y elementos gráficos, son creación propia y están protegidos por
-          derechos de propiedad intelectual.
+          odas las fotografías utilizadas en este sitio web son propiedad del titular, salvo la imagen del piano en la portada, la cual es obtenida de iStock bajo licencia libre de derechos. La fotografía utilizada en la sección de contacto pertenece a Adri Castellanos Photography (https://www.instagram.com/adricastellanosphotography/) y se utiliza con su consentimiento expreso. Los iconos incorporados corresponden a la librería React Icons, y la tipografía empleada proviene de fuentes autorizadas de Google Fonts. En todo caso, el diseño general del sitio, así como el resto de los contenidos y elementos gráficos, constituyen creación original del titular y están protegidos conforme a la legislación vigente sobre propiedad intelectual y derechos de autor.
         </p>
       </section>
 
