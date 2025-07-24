@@ -21,7 +21,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           style={{ color: "#333", textDecoration: "none" }}
         >
-          Álvaro Ponce Marín
+          Álvaro Ponce
         </a>{" "}
         © {new Date().getFullYear()}
       </p>
