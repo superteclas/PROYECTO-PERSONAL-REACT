@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { FaCommentDots } from "react-icons/fa";
@@ -36,6 +37,14 @@ const Multimedia = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <Helmet>
+        <title>Multimedia - Videos</title>
+        <meta
+          name="description"
+          content="Disfruta una selección curada de videos creativos, inspiradores y documentales breves."
+        />
+      </Helmet>
+
       {/* Overlay oscuro */}
       <div
         style={{

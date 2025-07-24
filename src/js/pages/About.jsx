@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { motion } from "framer-motion";
@@ -32,49 +33,57 @@ Actualmente, soy músico autónomo, y formo parte de varias formaciones activas 
   ];
 
   return (
-    <div className="about-page">
-      <Navbar />
+    <>
+      <Helmet>
+        <title>Sobre mí – Álvaro Ponce Keys</title>
+        <meta
+          name="description"
+          content="Descubre la trayectoria profesional y formación de Álvaro Ponce, pianista y desarrollador Full Stack."
+        />
+        <link rel="canonical" href="https://www.alvaroponcekeys.com/about" />
+      </Helmet>
 
-      <main className="about-main" style={{ backgroundImage: `url(${backgroundImage})` }}>
-        <div className="overlay" />
+      <div className="about-page">
+        <Navbar />
 
-        <div className="content-container">
-          <motion.h1
-            className="text-4xl md:text-5xl font-bold text-white text-center"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            Sobre mí
-          </motion.h1>
+        <main className="about-main" style={{ backgroundImage: `url(${backgroundImage})` }}>
+          <div className="overlay" />
 
-          <div className="paragraphs space-y-6 mt-10">
-            {paragraphs.map((text, index) => (
+          <div className="content-container">
+            <motion.h1
+              className="text-4xl md:text-5xl font-bold mb-8"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Sobre mí
+            </motion.h1>
+
+            {paragraphs.map((text, i) => (
               <motion.p
-                key={index}
-                className="text-lg md:text-xl leading-relaxed text-white text-center"
-                custom={index}
+                key={i}
+                custom={i}
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                animate="visible"
                 variants={fadeInUp}
+                className="text-lg leading-relaxed mb-6"
               >
                 {text}
               </motion.p>
             ))}
           </div>
+        </main>
+
+        <Footer />
+
+        <div className="floating-contact">
+          <a href="/contact">
+            <FaCommentDots />
+            Contactar
+          </a>
         </div>
-      </main>
-
-      <Footer />
-
-      <div className="floating-contact">
-        <a href="/contact" className="flex items-center gap-2">
-          <FaCommentDots />
-          <span className="hidden md:inline">Contactar</span>
-        </a>
       </div>
-    </div>
+    </>
   );
 };
 

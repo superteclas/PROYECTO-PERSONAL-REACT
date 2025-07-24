@@ -67,3 +67,14 @@
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+.content-container {
+  color: white;
+}
+
+.content-container p {
+  color: white;
+}
+
+.content-container h1 {
+  color: white;
+}
