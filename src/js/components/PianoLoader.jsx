@@ -1,8 +1,21 @@
-// PianoLoader.jsx
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/pianoloader.css";
 
 export default function PianoLoader({ visible }) {
+  const [showLoader, setShowLoader] = useState(visible);
+
+  useEffect(() => {
+    if (visible) {
+      setShowLoader(true); // Mostrar loader inmediatamente
+    } else {
+      // Esperar 2 segundos antes de ocultar para que dure más visible
+      const timeout = setTimeout(() => setShowLoader(false), 2000);
+      return () => clearTimeout(timeout);
+    }
+  }, [visible]);
+
+  if (!showLoader) return null;
+
   return (
     <div className={`piano-loader ${visible ? "fade-in" : "fade-out"}`}>
       <svg
@@ -18,7 +31,7 @@ export default function PianoLoader({ visible }) {
             x={i * 20 + 5}
             y={10}
             width={14}
-            height={60} 
+            height={60}
             fill="#fff"
             className="white-key"
             style={{ animationDelay: `${i * 0.1}s` }}
