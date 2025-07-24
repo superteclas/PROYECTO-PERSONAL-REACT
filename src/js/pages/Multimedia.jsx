@@ -41,7 +41,7 @@ const Multimedia = () => {
         <title>Multimedia - Videos</title>
         <meta
           name="description"
-          content="Disfruta una selección curada de videos creativos, inspiradores y documentales breves."
+          content="Disfruta una selección de videos musicales, de todos los estilos."
         />
       </Helmet>
 
