@@ -16,47 +16,74 @@ import logo12 from "../../img/logos/Popladies.png";
 import logo13 from "../../img/logos/rockbeat.png";
 import logo14 from "../../img/logos/hive.png";
 import logo15 from "../../img/logos/fito.jpg";
-
+import logo16 from "../../img/logos/wilfrid.png"; // Nuevo logo vertical
 
 const logos = [
-  logo1, logo10, logo12, logo13,logo15, logo5, logo2, logo7,
-  logo8, logo9, logo6, logo11, logo3, logo4, logo14,
+  logo1,
+  logo10,
+  logo12,
+  logo13,
+  logo15,
+  logo5,
+  logo2,
+  logo16, // ✅ Insertado aquí antes de logo7
+  logo7,
+  logo8,
+  logo9,
+  logo6,
+  logo11,
+  logo3,
+  logo4,
+  logo14,
 ];
 
 const logoLinks = [
-  "https://www.dacapomusic.es/",                            // logo1
-  "http://www.babaluswingband.com/",             // logo10
-  "https://www.instagram.com/tributopopladies/",                // logo12
-  "https://www.rockandbeat.com/",                           // logo13
+  "https://www.dacapomusic.es/",                             // logo1
+  "http://www.babaluswingband.com/",                         // logo10
+  "https://www.instagram.com/tributopopladies/",             // logo12
+  "https://www.rockandbeat.com/",                            // logo13
   "https://www.instagram.com/fitipaldisbandtributo_/",       // logo15
-  "https://www.instagram.com/blackglittercoverband/",       // logo5
-  "https://www.blacknoteclub.com/",                         // logo2
-  "https://www.rockfm.fm/",                                 // logo7
-  "https://espectaculoslatribu.com/",                     // logo8
-  "https://escueladeartistasbysandrapolop.com/",                          // logo9
+  "https://www.instagram.com/blackglittercoverband/",        // logo5
+  "https://www.blacknoteclub.com/",                          // logo2
+  "https://www.wilfridenergiahumana.com/",                   // ✅ logo16 (nuevo enlace)
+  "https://www.rockfm.fm/",                                  // logo7
+  "https://espectaculoslatribu.com/",                        // logo8
+  "https://escueladeartistasbysandrapolop.com/",             // logo9
   "https://www.marriott.com/en-us/hotels/vlcwi-the-westin-valencia/", // logo6
-  "https://adlibitum.es/",                                  // logo11
+  "https://adlibitum.es/",                                   // logo11
   "https://queteconsigo.com/",                               // logo3
-  "https://eventime.es/",                                   // logo4
-  "https://www.hiverecordingstudio.com/",                                 // logo14
+  "https://eventime.es/",                                    // logo4
+  "https://www.hiverecordingstudio.com/",                    // logo14
 ];
 
 const LogoCarousel = () => {
-  const repeatedLogos = [...logos, ...logos,...logos]; // duplicar 3 veces
+  const repeatedLogos = [...logos, ...logos, ...logos]; // duplicar 3 veces
+
   return (
     <div className="carousel-container">
       <div className="carousel-track">
-        {repeatedLogos.map((logo, index) => (
-          <div className="carousel-slide" key={index}>
-            <a
-              href={logoLinks[index % logos.length]}
-              target="_blank"
-              rel="noopener noreferrer"
+        {repeatedLogos.map((logo, index) => {
+          const isVertical = logo === logo16;
+
+          return (
+            <div
+              className={`carousel-slide ${isVertical ? "taller-slide" : ""}`}
+              key={index}
             >
-              <img src={logo} alt={`logo-${index}`} />
-            </a>
-          </div>
-        ))}
+              <a
+                href={logoLinks[index % logos.length]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={logo}
+                  alt={`logo-${index}`}
+                  className={isVertical ? "vertical-logo" : ""}
+                />
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
