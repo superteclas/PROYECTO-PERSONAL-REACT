@@ -18,7 +18,7 @@ const Legal = () => {
           </a>{" "}
           es titularidad de Álvaro Ponce. Para contactar con el titular se facilita la dirección de correo electrónico{" "}
           <a href="mailto:alvaroponcekeys@gmail.com" className="text-black underline">
-            alvaroponcemarin@gmail.com
+            alvaroponcekeys@gmail.com
           </a>.
         </p>
       </section>
