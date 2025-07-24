@@ -27,7 +27,7 @@ const Contact = () => {
           >
             <FaWhatsapp />
           </a>
-          <a href="mailto:alvaroponcemarin@gmail.com" className="contact-icon email">
+          <a href="mailto:alvaroponcekeys@gmail.com" className="contact-icon email">
             <FaEnvelope />
           </a>
           <a
