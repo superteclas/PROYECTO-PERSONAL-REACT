@@ -7,21 +7,24 @@
     <!-- Verificación de Google Search Console -->
     <meta name="google-site-verification" content="x-tUjiyISjBg7mX99zQwmbIRe7PcC1XI6SIK9aimTY8" />
 
-    <!-- Favicon -->
+    <!-- Favicon y Apple Touch Icon -->
     <link rel="icon" type="image/x-icon" href="/alvarito.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <!-- Imagen SEO para compartir -->
+    <!-- Imagen para SEO (no visible, solo para motores de búsqueda) -->
     <link rel="image_src" href="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png" />
 
-    <!-- Canonical -->
+    <!-- Canonical SEO -->
     <link rel="canonical" href="https://www.alvaroponcekeys.com/" />
 
-
-    <!-- Título y descripción SEO -->
+    <!-- Título y descripción para SEO -->
     <title>Álvaro Ponce Keys – Pianista en Valencia | Home</title>
-    <meta name="description" content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más." />
+    <meta
+      name="description"
+      content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más."
+    />
 
-    <!-- Datos estructurados JSON-LD -->
+    <!-- Datos estructurados para SEO (JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -51,10 +54,16 @@
       }
     </script>
   </head>
-  <body>
-    <div id="root"></div>
 
-    <!-- Confirmado: tu main.jsx está en /src/js/ -->
+  <body>
+    <!--
+      Nota para herramientas SEO:
+      Esta es una SPA (Single Page Application) creada con React.
+      Los encabezados y el contenido principal se renderizan dinámicamente.
+      Googlebot puede indexarlo correctamente gracias al soporte de JavaScript.
+    -->
+
+    <div id="root"></div>
     <script type="module" src="/src/js/main.jsx"></script>
   </body>
 </html>
