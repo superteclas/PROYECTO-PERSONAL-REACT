@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -7,55 +7,53 @@
     <!-- Verificación de Google Search Console -->
     <meta name="google-site-verification" content="x-tUjiyISjBg7mX99zQwmbIRe7PcC1XI6SIK9aimTY8" />
 
-    <!-- Favicon para navegador -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/alvarito.ico" />
 
-    <!-- Icono para que Google lo use (sin mostrarlo) -->
+    <!-- Imagen SEO para compartir -->
     <link rel="image_src" href="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png" />
 
-    <!-- Etiqueta canonical para SEO -->
-    <link rel="canonical" href="https://www.alvaroponcekeys.com" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.alvaroponcekeys.com/" />
 
-    <!-- Título SEO -->
-    <title>Álvaro Ponce – Pianista en Valencia para conciertos y eventos</title>
+    <!-- Título y descripción SEO -->
+    <title>Álvaro Ponce Keys – Pianista en Valencia | Home</title>
+    <meta name="description" content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más." />
 
-    <!-- Descripción SEO -->
-    <meta name="description" content="Álvaro Ponce es un pianista en Valencia especializado en música en vivo para conciertos, shows, eventos y bodas. Profesional y versátil." />
-
-
-    <!-- Datos estructurados para Google (JSON-LD) -->
+    <!-- Datos estructurados JSON-LD -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MusicGroup",
-      "name": "Álvaro Ponce Keys",
-      "url": "https://www.alvaroponcekeys.com",
-      "image": "https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png",
-      "sameAs": [
-        "https://www.instagram.com/alvaroponcekeys",
-        "https://www.youtube.com/@superteclas"
-      ],
-      "description": "Pianista en Valencia especializado en conciertos en directo, eventos, bodas y shows íntimos.",
-      "location": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "postalCode": "46001",
-          "addressLocality": "Valencia",
-          "addressRegion": "Valencia",
-          "addressCountry": "ES"
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Álvaro Ponce Keys",
+        "url": "https://www.alvaroponcekeys.com",
+        "image": "https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png",
+        "sameAs": [
+          "https://www.instagram.com/alvaroponcekeys",
+          "https://www.youtube.com/@superteclas"
+        ],
+        "description": "Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más.",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "postalCode": "46001",
+            "addressLocality": "Valencia",
+            "addressRegion": "Valencia",
+            "addressCountry": "ES"
+          }
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Álvaro Ponce"
         }
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Álvaro Ponce"
       }
-    }
     </script>
   </head>
   <body>
-    <!-- Ya no se muestra el logo aquí -->
     <div id="root"></div>
+
+    <!-- Confirmado: tu main.jsx está en /src/js/ -->
     <script type="module" src="/src/js/main.jsx"></script>
   </body>
 </html>
