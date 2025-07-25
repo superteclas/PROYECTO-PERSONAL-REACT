@@ -54,7 +54,16 @@ const Legal = () => {
         <p className="text-justify leading-relaxed text-sm">
           Este sitio web no almacena ni trata datos personales de los usuarios a través de formularios. El contacto con
           el titular se realiza exclusivamente mediante correo electrónico, y los datos que pudieran proporcionarse en
-          dicho contexto no se almacenan en ninguna base de datos automatizada ni se ceden a terceros.
+          dicho contexto serán tratados únicamente para atender la solicitud recibida.
+        </p>
+        <p className="text-justify leading-relaxed text-sm">
+          Conforme al Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD), dichos datos no se incorporan a
+          ninguna base de datos automatizada, no se ceden a terceros y serán eliminados una vez gestionada la consulta. El
+          usuario podrá ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y
+          portabilidad mediante solicitud dirigida a{" "}
+          <a href="mailto:alvaroponcekeys@gmail.com" className="text-black underline">
+            alvaroponcekeys@gmail.com
+          </a>.
         </p>
       </section>
 
@@ -88,6 +97,13 @@ const Legal = () => {
         <h2 className="text-xl font-semibold mb-2 text-black">8. USO DE LOGOS Y MARCAS DE TERCEROS</h2>
         <p className="text-justify leading-relaxed text-sm">
           Los logotipos mostrados en el carrusel de la página de inicio corresponden a empresas, marcas o entidades con las que el titular ha colaborado profesionalmente. Dichos logotipos se muestran con el consentimiento expreso de sus respectivos propietarios y con la única finalidad de ilustrar colaboraciones previas. En ningún caso se pretende implicar relación comercial continuada, representación exclusiva ni asociación institucional más allá del acuerdo puntual autorizado por las partes.
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-2 text-black">9. POLÍTICA DE COOKIES</h2>
+        <p className="text-justify leading-relaxed text-sm">
+          Este sitio web no utiliza cookies propias ni de terceros con fines publicitarios o de análisis. No obstante, el contenido embebido desde plataformas externas como YouTube podría generar cookies técnicas necesarias para su funcionamiento, ajenas al control del titular. El usuario puede configurar su navegador para bloquear o eliminar dichas cookies si lo desea.
         </p>
       </section>
 
