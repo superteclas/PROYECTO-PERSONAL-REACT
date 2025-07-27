@@ -7,24 +7,37 @@
     <!-- Verificación de Google Search Console -->
     <meta name="google-site-verification" content="x-tUjiyISjBg7mX99zQwmbIRe7PcC1XI6SIK9aimTY8" />
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.alvaroponcekeys.com/" />
+
     <!-- Favicon y Apple Touch Icon -->
     <link rel="icon" type="image/x-icon" href="/alvarito.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <!-- Imagen para SEO (no visible, solo para motores de búsqueda) -->
+    <!-- Meta SEO -->
+    <title>Álvaro Ponce Keys – Pianista en Valencia | Home</title>
+    <meta name="description" content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Álvaro Ponce Keys – Pianista en Valencia" />
+    <meta property="og:description" content="Conciertos, clases, grabaciones, arreglos y más." />
+    <meta property="og:image" content="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png" />
+    <meta property="og:url" content="https://www.alvaroponcekeys.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF36LZ5ZJJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-YF36LZ5ZJJ');
+    </script>
+
+    <!-- Imagen para SEO genérica -->
     <link rel="image_src" href="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png" />
 
-    <!-- Canonical SEO -->
-    <link rel="canonical" href="https://www.alvaroponcekeys.com/" />
-
-    <!-- Título y descripción para SEO -->
-    <title>Álvaro Ponce Keys – Pianista en Valencia | Home</title>
-    <meta
-      name="description"
-      content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más."
-    />
-
-    <!-- Datos estructurados para SEO (JSON-LD) -->
+    <!-- Datos estructurados JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -56,13 +69,12 @@
   </head>
 
   <body>
-    <!--
-      Nota para herramientas SEO:
-      Esta es una SPA (Single Page Application) creada con React.
-      Los encabezados y el contenido principal se renderizan dinámicamente.
-      Googlebot puede indexarlo correctamente gracias al soporte de JavaScript.
-    -->
+    <!-- Fallback SEO para analizadores sin JavaScript -->
+    <noscript>
+      <h1 style="display:none;">Álvaro Ponce – Pianista y arreglista en Valencia</h1>
+    </noscript>
 
+    <!-- SPA root -->
     <div id="root"></div>
     <script type="module" src="/src/js/main.jsx"></script>
   </body>
