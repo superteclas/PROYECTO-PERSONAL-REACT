@@ -26,19 +26,26 @@ const Home = () => {
 
         {/* Sección principal */}
         <section
-          className="d-flex align-items-center text-white"
-          style={{
-            backgroundImage: `url(${topImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
-            height: "90vh",
-          }}
-        >
-          <div className="container text-center bg-black bg-opacity-50 p-4 rounded">
-            <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
-            <p className="lead">Pianista-Teclista · Arreglista · </p>
-          </div>
-        </section>
+  className="position-relative d-flex align-items-center text-white"
+  style={{ height: "90vh" }}
+>
+  {/* Imagen LCP */}
+  <img
+    src={topImage}
+    alt="Álvaro Ponce tocando el piano"
+    fetchpriority="high"
+    decoding="async"
+    loading="eager"
+    className="position-absolute w-100 h-100 object-fit-cover z-n1"
+    style={{ top: 0, left: 0 }}
+  />
+
+  {/* Contenido sobre la imagen */}
+  <div className="container text-center bg-black bg-opacity-50 p-4 rounded z-1">
+    <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
+    <p className="lead">Pianista-Teclista · Arreglista · </p>
+  </div>
+</section>
 
         {/* Servicios */}
         <section className="bg-light py-5">
