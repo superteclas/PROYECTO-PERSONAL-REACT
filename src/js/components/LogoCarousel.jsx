@@ -16,7 +16,7 @@ import logo12 from "../../img/logos/Popladies.png";
 import logo13 from "../../img/logos/rockbeat.png";
 import logo14 from "../../img/logos/hive.png";
 import logo15 from "../../img/logos/fito.webp";
-import logo16 from "../../img/logos/wilfrid.webp"; 
+import logo16 from "../../img/logos/wilfrid.webp";
 
 const logos = [
   logo1,
@@ -26,7 +26,7 @@ const logos = [
   logo15,
   logo5,
   logo2,
-  logo16, // ✅ Insertado aquí antes de logo7
+  logo16,
   logo7,
   logo8,
   logo9,
@@ -38,33 +38,32 @@ const logos = [
 ];
 
 const logoLinks = [
-  "https://www.dacapomusic.es/",                             // logo1
-  "http://www.babaluswingband.com/",                         // logo10
-  "https://www.instagram.com/tributopopladies/",             // logo12
-  "https://www.rockandbeat.com/",                            // logo13
-  "https://www.instagram.com/fitipaldisbandtributo_/",       // logo15
-  "https://www.instagram.com/blackglittercoverband/",        // logo5
-  "https://www.blacknoteclub.com/",                          // logo2
-  "https://www.wilfridenergiahumana.com/",                   // ✅ logo16 (nuevo enlace)
-  "https://www.rockfm.fm/",                                  // logo7
-  "https://espectaculoslatribu.com/",                        // logo8
-  "https://escueladeartistasbysandrapolop.com/",             // logo9
-  "https://www.marriott.com/en-us/hotels/vlcwi-the-westin-valencia/", // logo6
-  "https://adlibitum.es/",                                   // logo11
-  "https://queteconsigo.com/",                               // logo3
-  "https://eventime.es/",                                    // logo4
-  "https://www.hiverecordingstudio.com/",                    // logo14
+  "https://www.dacapomusic.es/",
+  "http://www.babaluswingband.com/",
+  "https://www.instagram.com/tributopopladies/",
+  "https://www.rockandbeat.com/",
+  "https://www.instagram.com/fitipaldisbandtributo_/",
+  "https://www.instagram.com/blackglittercoverband/",
+  "https://www.blacknoteclub.com/",
+  "https://www.wilfridenergiahumana.com/",
+  "https://www.rockfm.fm/",
+  "https://espectaculoslatribu.com/",
+  "https://escueladeartistasbysandrapolop.com/",
+  "https://www.marriott.com/en-us/hotels/vlcwi-the-westin-valencia/",
+  "https://adlibitum.es/",
+  "https://queteconsigo.com/",
+  "https://eventime.es/",
+  "https://www.hiverecordingstudio.com/",
 ];
 
 const LogoCarousel = () => {
-  const repeatedLogos = [...logos, ...logos, ...logos]; // duplicar 3 veces
+  const repeatedLogos = [...logos, ...logos, ...logos];
 
   return (
     <div className="carousel-container">
       <div className="carousel-track">
         {repeatedLogos.map((logo, index) => {
           const isVertical = logo === logo16;
-
           return (
             <div
               className={`carousel-slide ${isVertical ? "taller-slide" : ""}`}
@@ -77,7 +76,7 @@ const LogoCarousel = () => {
               >
                 <img
                   src={logo}
-                  alt={`logo-${index}`}
+                  alt={`Logo ${index + 1}`}
                   className={isVertical ? "vertical-logo" : ""}
                 />
               </a>
@@ -85,6 +84,30 @@ const LogoCarousel = () => {
           );
         })}
       </div>
+
+      {/* Fallback SEO-friendly links for bots that don’t render JS */}
+      <noscript>
+        <div style={{ display: "none" }}>
+          <ul>
+            <li><a href="https://www.dacapomusic.es/" target="_blank" rel="noopener noreferrer">Dacapo Music</a></li>
+            <li><a href="http://www.babaluswingband.com/" target="_blank" rel="noopener noreferrer">Babalu Swing</a></li>
+            <li><a href="https://www.instagram.com/tributopopladies/" target="_blank" rel="noopener noreferrer">Pop Ladies</a></li>
+            <li><a href="https://www.rockandbeat.com/" target="_blank" rel="noopener noreferrer">Rock & Beat</a></li>
+            <li><a href="https://www.instagram.com/fitipaldisbandtributo_/" target="_blank" rel="noopener noreferrer">Fitipaldis Tributo</a></li>
+            <li><a href="https://www.instagram.com/blackglittercoverband/" target="_blank" rel="noopener noreferrer">Black Glitter</a></li>
+            <li><a href="https://www.blacknoteclub.com/" target="_blank" rel="noopener noreferrer">Black Note Club</a></li>
+            <li><a href="https://www.wilfridenergiahumana.com/" target="_blank" rel="noopener noreferrer">Wilfrid Energía Humana</a></li>
+            <li><a href="https://www.rockfm.fm/" target="_blank" rel="noopener noreferrer">Rock FM</a></li>
+            <li><a href="https://espectaculoslatribu.com/" target="_blank" rel="noopener noreferrer">La Tribu</a></li>
+            <li><a href="https://escueladeartistasbysandrapolop.com/" target="_blank" rel="noopener noreferrer">Sandra Polop Escuela</a></li>
+            <li><a href="https://www.marriott.com/en-us/hotels/vlcwi-the-westin-valencia/" target="_blank" rel="noopener noreferrer">The Westin Valencia</a></li>
+            <li><a href="https://adlibitum.es/" target="_blank" rel="noopener noreferrer">Ad Libitum</a></li>
+            <li><a href="https://queteconsigo.com/" target="_blank" rel="noopener noreferrer">Qué te Consigo</a></li>
+            <li><a href="https://eventime.es/" target="_blank" rel="noopener noreferrer">Eventime</a></li>
+            <li><a href="https://www.hiverecordingstudio.com/" target="_blank" rel="noopener noreferrer">Hive Recording Studio</a></li>
+          </ul>
+        </div>
+      </noscript>
     </div>
   );
 };
