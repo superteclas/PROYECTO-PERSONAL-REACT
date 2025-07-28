@@ -26,7 +26,7 @@ export const Footer = () => {
         © {new Date().getFullYear()}
       </p>
 
-      {/* Redes sociales con animación */}
+      {/* Redes sociales con accesibilidad mejorada */}
       <div
         style={{
           marginTop: "0.5rem",
@@ -40,6 +40,7 @@ export const Footer = () => {
           href="https://github.com/superteclas"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
           className="icon-social"
           style={{ color: "#000" }}
         >
@@ -49,6 +50,7 @@ export const Footer = () => {
           href="https://instagram.com/alvaroponcekeys"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Instagram"
           className="icon-social"
           style={{ color: "#000" }}
         >
@@ -58,6 +60,7 @@ export const Footer = () => {
           href="https://www.youtube.com/superteclas"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="YouTube"
           className="icon-social"
           style={{ color: "#000" }}
         >
@@ -71,6 +74,17 @@ export const Footer = () => {
           Aviso Legal
         </Link>
       </p>
+
+      {/* Fallback SEO links para bots sin JS */}
+      <noscript>
+        <div style={{ display: "none" }}>
+          <ul>
+            <li><a href="https://github.com/superteclas" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://instagram.com/alvaroponcekeys" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.youtube.com/superteclas" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+      </noscript>
     </footer>
   );
 };
