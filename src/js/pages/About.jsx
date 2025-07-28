@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { FaCommentDots } from "react-icons/fa";
 import "../../styles/about.css";
 
-import backgroundImage from "../../img/yo.jpeg";
+import backgroundImage from "../../img/yo.webp";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },

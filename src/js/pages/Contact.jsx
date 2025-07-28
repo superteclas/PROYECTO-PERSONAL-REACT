@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
-import contactBg from "../../img/tecladosblack.jpg";
+import contactBg from "../../img/tecladosblack.webp";
 import "../../styles/contact.css";
 
 const Contact = () => {

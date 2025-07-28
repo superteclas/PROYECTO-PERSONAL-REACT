@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { FaCommentDots } from "react-icons/fa";
-import fondo from "../../img/sintes.jpg";
+import fondo from "../../img/sintes.webp";
 import "../../styles/multimedia.css";
 
 const Multimedia = () => {

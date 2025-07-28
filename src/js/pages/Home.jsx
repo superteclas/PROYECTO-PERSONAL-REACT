@@ -4,8 +4,8 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import LogoCarousel from "../components/LogoCarousel";
 import { FaCommentDots } from "react-icons/fa";
-import topImage from "../../img/pianoroto.jpg";
-import downImage from "../../img/piano2.jpeg";
+import topImage from "../../img/pianoroto.webp";
+import downImage from "../../img/piano2.webp";
 
 import "../../styles/home.css";
 
