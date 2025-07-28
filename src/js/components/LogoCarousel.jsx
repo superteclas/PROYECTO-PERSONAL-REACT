@@ -15,8 +15,8 @@ import logo11 from "../../img/logos/adlibitum.png";
 import logo12 from "../../img/logos/Popladies.png";
 import logo13 from "../../img/logos/rockbeat.png";
 import logo14 from "../../img/logos/hive.png";
-import logo15 from "../../img/logos/fito.jpg";
-import logo16 from "../../img/logos/wilfrid.png"; // Nuevo logo vertical
+import logo15 from "../../img/logos/fito.webp";
+import logo16 from "../../img/logos/wilfrid.webp"; 
 
 const logos = [
   logo1,
