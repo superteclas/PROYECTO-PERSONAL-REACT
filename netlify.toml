@@ -1,11 +1,25 @@
+# Redirección estándar para React SPA
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
   force = false
 
+# Encabezados generales
 [[headers]]
   for = "/*"
   [headers.values]
     X-Robots-Tag = "index, follow"
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Encabezado específico para el sitemap
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
