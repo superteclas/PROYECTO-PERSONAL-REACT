@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/carousel.css";
 
 import logo1 from "../../img/logos/capo.png";
-import logo2 from "../../img/logos/black.png";
+import logo2 from "../../img/logos/black.webp";
 import logo3 from "../../img/logos/consigo.png";
 import logo4 from "../../img/logos/eventime.webp";
 import logo5 from "../../img/logos/glitter.webp";
