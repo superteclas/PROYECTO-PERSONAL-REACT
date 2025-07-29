@@ -15,7 +15,7 @@ const Contact = () => {
           name="description"
           content="Contacta con Álvaro Ponce Keys para conciertos, clases y grabaciones."
         />
-        <link rel="canonical" href="https://www.alvaroponcekeys.com/contact" />
+        <link rel="canonical" href="https://alvaroponcekeys.com/contact" />
       </Helmet>
 
       <div className="d-flex flex-column min-vh-100">

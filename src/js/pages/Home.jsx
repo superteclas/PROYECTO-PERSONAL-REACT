@@ -23,7 +23,7 @@ const Home = () => {
           name="description"
           content="Pianista profesional en Valencia: conciertos, clases particulares, arreglos y grabaciones. Música en directo y formación musical personalizada."
         />
-        <link rel="canonical" href="https://www.alvaroponcekeys.com/" />
+        <link rel="canonical" href="https://alvaroponcekeys.com/" />
       </Helmet>
 
       <div className="d-flex flex-column min-vh-100" style={{ position: "relative" }}>

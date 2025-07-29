@@ -40,7 +40,7 @@ Actualmente, soy músico autónomo, y formo parte de varias formaciones activas 
           name="description"
           content="Descubre la trayectoria profesional y formación de Álvaro Ponce, pianista y desarrollador Full Stack."
         />
-        <link rel="canonical" href="https://www.alvaroponcekeys.com/about" />
+        <link rel="canonical" href="https://alvaroponcekeys.com/about" />
       </Helmet>
 
       <div className="about-page">
