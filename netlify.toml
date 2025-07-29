@@ -1,4 +1,9 @@
-# Excepciones para archivos estáticos robots.txt y sitemap.xml
+[[redirects]]
+  from = "https://www.alvaroponcekeys.com/*"
+  to = "https://alvaroponcekeys.com/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"
@@ -9,26 +14,22 @@
   to = "/sitemap.xml"
   status = 200
 
-# Redirección SPA para el resto
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Encabezados globales
 [[headers]]
   for = "/*"
   [headers.values]
     X-Robots-Tag = "index, follow"
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Encabezado para el sitemap
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml"
 
-# Encabezado para el robots.txt
 [[headers]]
   for = "/robots.txt"
   [headers.values]
