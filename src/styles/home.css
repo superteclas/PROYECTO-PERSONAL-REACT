@@ -1,3 +1,33 @@
+/* Fuente elegante y ligera para todo el sitio */
+body {
+  font-family: 'Poiret One', cursive;
+  color: #222;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-weight: 400; /* Ligero */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poiret One', cursive;
+  font-weight: 400;
+  color: #fffefe;
+  margin: 0 0 1rem;
+}
+
+/* Enlaces */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1c3d7a;
+}
+
+/* Botones estilo flotante */
 .floating-contact {
   position: fixed;
   bottom: 20px;
@@ -6,11 +36,12 @@
 }
 
 .floating-contact a {
+  font-family: 'Montserrat', sans-serif; /* Más robusta */
+  font-weight: 600;
   background-color: #000;
   color: #fff;
   border-radius: 30px;
   padding: 10px 16px;
-  font-weight: bold;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -25,10 +56,9 @@
   transform: scale(1.1);
 }
 
-
-
+/* Animación */
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
