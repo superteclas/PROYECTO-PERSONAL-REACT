@@ -16,7 +16,7 @@ const Home = () => {
         <title>Álvaro Ponce Keys – Pianista en Valencia | Home</title>
         <meta
           name="description"
-          content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más."
+          content="Pianista profesional en Valencia: conciertos, clases particulares, arreglos y grabaciones. Música en directo y formación musical personalizada."
         />
         <link rel="canonical" href="https://www.alvaroponcekeys.com/" />
       </Helmet>
@@ -26,26 +26,24 @@ const Home = () => {
 
         {/* Sección principal */}
         <section
-  className="position-relative d-flex align-items-center text-white"
-  style={{ height: "90vh" }}
->
-  {/* Imagen LCP */}
-  <img
-    src={topImage}
-    alt="Álvaro Ponce tocando el piano"
-    fetchpriority="high"
-    decoding="async"
-    loading="eager"
-    className="position-absolute w-100 h-100 object-fit-cover z-n1"
-    style={{ top: 0, left: 0 }}
-  />
+          className="position-relative d-flex align-items-center text-white"
+          style={{ height: "90vh" }}
+        >
+          <img
+            src={topImage}
+            alt="Álvaro Ponce tocando el piano"
+            fetchpriority="high"
+            decoding="async"
+            loading="eager"
+            className="position-absolute w-100 h-100 object-fit-cover z-n1"
+            style={{ top: 0, left: 0 }}
+          />
 
-  {/* Contenido sobre la imagen */}
-  <div className="container text-center bg-black bg-opacity-50 p-4 rounded z-1">
-    <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
-    <p className="lead">Pianista-Teclista · Arreglista · </p>
-  </div>
-</section>
+          <div className="container text-center bg-black bg-opacity-50 p-4 rounded z-1">
+            <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
+            <p className="lead">Pianista en Valencia · Clases · Grabaciones · Arreglos</p>
+          </div>
+        </section>
 
         {/* Servicios */}
         <section className="bg-light py-5">
@@ -67,7 +65,13 @@ const Home = () => {
                 <small className="text-muted">Música · Arreglos · Grabación</small>
                 <h2 className="fw-bold mt-2">Servicios</h2>
                 <p>
-                  Soy un músico polivalente con experiencia en una amplia gama de estilos. Me dedico a la interpretación en vivo para conciertos y eventos, también ofrezco arreglos musicales además de colaboraciones como músico de estudio. Imparto clases particulares de piano, tanto presenciales como online, y realizo grabaciones desde casa, adaptándome a las necesidades de cada proyecto. Mi enfoque une técnica, emoción y versatilidad para lograr una expresión musical auténtica.
+                  Soy <strong>pianista y teclista profesional en Valencia</strong> con amplia experiencia en interpretación, enseñanza y grabación musical. Como <strong>músico polivalente</strong>, combino la técnica del piano clásico con estilos modernos, ofreciendo un enfoque versátil para cada proyecto. Mis servicios incluyen <strong>conciertos en directo</strong>, <strong>clases particulares de piano</strong> (presenciales y online), <strong>grabaciones desde mi estudio</strong> y <strong>arreglos musicales personalizados</strong> para solistas, bandas y productoras.
+                </p>
+                <p>
+                  Si estás buscando un <strong>pianista en Valencia</strong> para conciertos en vivo, eventos, bodas, producciones musicales, arreglos o sesiones de grabación, puedo adaptar cada interpretación a tus necesidades. También imparto <strong>clases de piano</strong> para todos los niveles, combinando teoría, armonía moderna e improvisación. Realizo grabaciones desde casa con calidad profesional, ideales para maquetas, cine, publicidad o redes sociales. Vivo en <strong>Valencia</strong> y estoy disponible tanto de forma presencial como online.
+                </p>
+                <p>
+                  Mi pasión por la música se refleja en cada uno de mis trabajos, desde el escenario hasta la enseñanza. Me comprometo con la calidad, la creatividad y la cercanía con el público, y si buscas un <strong>pianista en Valencia</strong> involucrado y profesional, estaré encantado de colaborar contigo.
                 </p>
                 <ul className="list-unstyled">
                   <li>✓ Conciertos y presentaciones en vivo</li>
