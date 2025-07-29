@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fuentes necesarias -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Preconexión a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Preload y carga no bloqueante de fuentes -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Preload CSS -->
-    <link rel="preload" href="/src/styles/home.css" as="style" onload="this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="/src/styles/home.css" /></noscript>
+    <!-- Preload CSS principal (no bloqueante) -->
+    <link rel="preload" href="/src/styles/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/styles/home.css"></noscript>
 
     <!-- Preload imagen LCP -->
     <link
@@ -92,7 +97,7 @@
     <h2 style="display: none;">Clases de piano en Valencia</h2>
     <h2 style="display: none;">Grabaciones y arreglos musicales</h2>
 
-    <!-- Fondo LCP como background-image para evitar texto alternativo visible -->
+    <!-- Fondo LCP como background-image -->
     <div
       class="lcp-image"
       role="img"
