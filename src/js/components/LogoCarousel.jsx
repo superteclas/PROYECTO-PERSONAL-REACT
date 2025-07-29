@@ -12,7 +12,7 @@ import logo8 from "../../img/logos/tribu.png";
 import logo9 from "../../img/logos/polop.png";
 import logo10 from "../../img/logos/babalu.webp";
 import logo11 from "../../img/logos/adlibitum.png";
-import logo12 from "../../img/logos/Popladies.png";
+import logo12 from "../../img/logos/Popladies.webp";
 import logo13 from "../../img/logos/rockbeat.png";
 import logo14 from "../../img/logos/hive.webp";
 import logo15 from "../../img/logos/fito.webp";
