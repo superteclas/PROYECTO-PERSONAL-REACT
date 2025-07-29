@@ -10,13 +10,6 @@ import downImage from "../../img/piano2.webp";
 import "../../styles/home.css";
 
 const Home = () => {
-  const seoIntro = `
-    <h1>Álvaro Ponce Keys – Pianista en Valencia</h1>
-    <p>Soy Álvaro Ponce, pianista profesional en Valencia. Ofrezco conciertos en directo,
-    clases de piano, arreglos y grabaciones musicales. Mi enfoque combina técnica,
-    emoción y versatilidad para adaptarme a todo tipo de proyectos musicales.</p>
-  `;
-
   return (
     <>
       <Helmet>
@@ -46,10 +39,10 @@ const Home = () => {
             style={{ top: 0, left: 0 }}
           />
 
-          <div
-            className="container text-center bg-black bg-opacity-50 p-4 rounded z-1"
-            dangerouslySetInnerHTML={{ __html: seoIntro }}
-          ></div>
+          <div className="container text-center bg-black bg-opacity-50 p-4 rounded z-1">
+            <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
+            <p className="lead">Pianista en Valencia · Clases · Grabaciones · Arreglos</p>
+          </div>
         </section>
 
         {/* Servicios */}
@@ -72,10 +65,10 @@ const Home = () => {
                 <small className="text-muted">Música · Arreglos · Grabación</small>
                 <h2 className="fw-bold mt-2">Servicios</h2>
                 <p>
-                  Soy <strong>pianista-teclista profesional en Valencia</strong> con amplia experiencia en interpretación, enseñanza y producción musical. Como <strong>músico polivalente</strong>, combino la técnica del piano clásico con estilos modernos, ofreciendo un enfoque versátil para cada proyecto. Mis servicios incluyen <strong>conciertos en directo</strong>, <strong>clases particulares de piano</strong> (presenciales y online), <strong>grabaciones de estudio</strong> y <strong>arreglos musicales personalizados</strong> para solistas, bandas y productoras.
+                  Soy <strong>pianista y teclista profesional en Valencia</strong> con amplia experiencia en interpretación, enseñanza y grabación musical. Como <strong>músico polivalente</strong>, combino la técnica del piano clásico con estilos modernos, ofreciendo un enfoque versátil para cada proyecto. Mis servicios incluyen <strong>conciertos en directo</strong>, <strong>clases particulares de piano</strong> (presenciales y online), <strong>grabaciones desde mi estudio</strong> y <strong>arreglos musicales personalizados</strong> para solistas, bandas y productoras.
                 </p>
                 <p>
-                  Si estás buscando un <strong>pianista en Valencia</strong> para eventos, bodas, producciones musicales o sesiones de grabación, puedo adaptar cada interpretación a tus necesidades. También imparto <strong>clases de piano</strong> para todos los niveles, combinando teoría, armonía moderna e improvisación. Realizo grabaciones con calidad profesional, ideales para maquetas, cine, publicidad o redes sociales. Vivo en <strong>Valencia</strong> y estoy disponible tanto de forma presencial como online.
+                  Si estás buscando un <strong>pianista en Valencia</strong> para conciertos en vivo, eventos, bodas, producciones musicales, arreglos o sesiones de grabación, puedo adaptar cada interpretación a tus necesidades. También imparto <strong>clases de piano</strong> para todos los niveles, combinando teoría, armonía moderna e improvisación. Realizo grabaciones desde casa con calidad profesional, ideales para maquetas, cine, publicidad o redes sociales. Vivo en <strong>Valencia</strong> y estoy disponible tanto de forma presencial como online.
                 </p>
                 <p>
                   Mi pasión por la música se refleja en cada uno de mis trabajos, desde el escenario hasta la enseñanza. Me comprometo con la calidad, la creatividad y la cercanía con el público, y si buscas un <strong>pianista en Valencia</strong> involucrado y profesional, estaré encantado de colaborar contigo.
