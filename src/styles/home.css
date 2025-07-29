@@ -1,4 +1,7 @@
 /* base.css */
+* {
+  font-family: 'Poiret One', cursive !important;
+}
 body {
   font-family: 'Poiret One', cursive;
   color: #222;
