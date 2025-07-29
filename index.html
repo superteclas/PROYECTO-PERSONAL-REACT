@@ -4,37 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preconexión a Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Preload y carga no bloqueante de fuentes -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
-
-    <!-- Preload CSS principal (no bloqueante) -->
-    <link
-      rel="preload"
-      href="/src/styles/home.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="/src/styles/home.css" /></noscript>
+   <!-- Fuentes -->
+  <link rel="stylesheet" href="/src/styles/fonts.css" />
+  <!-- Estilos base comunes -->
+  <link rel="stylesheet" href="/src/styles/home.css" />
+  <!-- Estilos específicos para index -->
+  <link rel="stylesheet" href="/src/styles/index.css" />
 
     <!-- Preload imagen LCP -->
     <link

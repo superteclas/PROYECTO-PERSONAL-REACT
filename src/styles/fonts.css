@@ -1,0 +1,30 @@
+/* fonts.css */
+
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400; /* en tu archivo nuevo es normal (400), no 200 */
+  src: url('/fonts/PoiretOne-Regular.woff2') format('woff2'),
+       url('/fonts/PoiretOne-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100; /* Thin */
+  src: url('/fonts/Montserrat-Thin.woff2') format('woff2'),
+       url('/fonts/Montserrat-Thin.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 100; /* Thin Italic */
+  src: url('/fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+       url('/fonts/Montserrat-ThinItalic.woff') format('woff');
+  font-display: swap;
+}
+
+/* Si tienes más pesos o estilos, añade aquí */
