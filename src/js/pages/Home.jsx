@@ -4,7 +4,12 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import LogoCarousel from "../components/LogoCarousel";
 import { FaCommentDots } from "react-icons/fa";
-import topImage from "../../img/pianoroto.webp";
+
+// Importar las 3 versiones del topImage en WebP
+import topImageSmall from "../../img/pianoroto-550x370.webp";
+import topImageMedium from "../../img/pianoroto-1109x741.webp";
+import topImageLarge from "../../img/pianoroto-2207x1478.webp";
+
 import downImage from "../../img/piano2.webp";
 
 import "../../styles/home.css";
@@ -30,7 +35,13 @@ const Home = () => {
           style={{ height: "90vh" }}
         >
           <img
-            src={topImage}
+            src={topImageMedium} // fallback
+            srcSet={`
+              ${topImageSmall} 550w,
+              ${topImageMedium} 1109w,
+              ${topImageLarge} 2207w
+            `}
+            sizes="(max-width: 600px) 550px, (max-width: 1200px) 1109px, 2207px"
             alt="Álvaro Ponce tocando el piano"
             fetchpriority="high"
             decoding="async"
