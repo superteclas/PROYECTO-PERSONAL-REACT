@@ -1,6 +1,6 @@
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../img/logonormalsinfondo.webp";
+import logo from "../../img/logonormalsinfondo.png";
 
 export const Footer = () => {
   return (
