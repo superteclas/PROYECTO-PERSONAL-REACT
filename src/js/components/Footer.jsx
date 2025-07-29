@@ -5,6 +5,7 @@ import logo from "../../img/logonormalsinfondo.png";
 export const Footer = () => {
   return (
     <footer className="footer" style={{ textAlign: "center", padding: "1rem 0" }}>
+      {/* Logo */}
       <div style={{ marginBottom: "0.1rem" }}>
         <img
           src={logo}
@@ -13,20 +14,12 @@ export const Footer = () => {
         />
       </div>
 
-      <p>
-        Made by{" "}
-        <a
-          href="https://www.youtube.com/superteclas"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#333", textDecoration: "none" }}
-        >
-          Álvaro Ponce
-        </a>{" "}
-        © {new Date().getFullYear()}
+      {/* Texto autor sin enlace */}
+      <p style={{ fontSize: "0.9rem", color: "#222" }}>
+        Made by Álvaro Ponce © {new Date().getFullYear()}
       </p>
 
-      {/* Redes sociales con accesibilidad mejorada */}
+      {/* Redes sociales */}
       <div
         style={{
           marginTop: "0.5rem",
@@ -42,7 +35,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
           className="icon-social"
-          style={{ color: "#000" }}
+          style={{ color: "#444" }}
         >
           <FaGithub />
         </a>
@@ -52,7 +45,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           aria-label="Instagram"
           className="icon-social"
-          style={{ color: "#000" }}
+          style={{ color: "#eb6d2eff" }}
         >
           <FaInstagram />
         </a>
@@ -62,26 +55,56 @@ export const Footer = () => {
           rel="noopener noreferrer"
           aria-label="YouTube"
           className="icon-social"
-          style={{ color: "#000" }}
+          style={{ color: "#cc0000" }}
         >
           <FaYoutube />
         </a>
       </div>
 
       {/* Aviso Legal */}
-      <p className="mt-2 text-xs text-gray-500">
-        <Link to="/legal" style={{ textDecoration: "underline", color: "#777" }}>
+      <p style={{ marginTop: "1rem", fontSize: "0.8rem" }}>
+        <Link
+          to="/legal"
+          style={{
+            textDecoration: "underline",
+            color: "#666",
+          }}
+        >
           Aviso Legal
         </Link>
       </p>
 
-      {/* Fallback SEO links para bots sin JS */}
+      {/* SEO fallback para bots sin JS */}
       <noscript>
         <div style={{ display: "none" }}>
           <ul>
-            <li><a href="https://github.com/superteclas" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://instagram.com/alvaroponcekeys" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://www.youtube.com/superteclas" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li>
+              <a
+                href="https://github.com/superteclas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/alvaroponcekeys"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/superteclas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
+              </a>
+            </li>
           </ul>
         </div>
       </noscript>
