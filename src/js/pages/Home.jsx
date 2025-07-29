@@ -100,7 +100,7 @@ const Home = () => {
         {/* Carrusel */}
         <section className="pt-0 pb-5">
           <div className="text-center mb-0 px-0">
-            <h4 className="text-muted mt-0 mb-5">He tenido el placer de trabajar con:</h4>
+            <h3 className="text-muted mt-0 mb-5">He tenido el placer de trabajar con:</h3>
           </div>
           <div className="w-100 px-0">
             <LogoCarousel />
