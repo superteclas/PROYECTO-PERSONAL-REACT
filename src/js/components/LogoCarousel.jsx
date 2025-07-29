@@ -5,7 +5,7 @@ import logo1 from "../../img/logos/capo.png";
 import logo2 from "../../img/logos/black.png";
 import logo3 from "../../img/logos/consigo.png";
 import logo4 from "../../img/logos/eventime.webp";
-import logo5 from "../../img/logos/glitter.png";
+import logo5 from "../../img/logos/glitter.webp";
 import logo6 from "../../img/logos/Marriot.svg";
 import logo7 from "../../img/logos/rock.png";
 import logo8 from "../../img/logos/tribu.png";
