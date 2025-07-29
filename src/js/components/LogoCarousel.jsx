@@ -14,7 +14,7 @@ import logo10 from "../../img/logos/babalu.png";
 import logo11 from "../../img/logos/adlibitum.png";
 import logo12 from "../../img/logos/Popladies.png";
 import logo13 from "../../img/logos/rockbeat.png";
-import logo14 from "../../img/logos/hive.png";
+import logo14 from "../../img/logos/hive.webp";
 import logo15 from "../../img/logos/fito.webp";
 import logo16 from "../../img/logos/wilfrid.webp";
 
