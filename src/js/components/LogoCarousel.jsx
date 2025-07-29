@@ -10,7 +10,7 @@ import logo6 from "../../img/logos/Marriot.svg";
 import logo7 from "../../img/logos/rock.png";
 import logo8 from "../../img/logos/tribu.png";
 import logo9 from "../../img/logos/polop.png";
-import logo10 from "../../img/logos/babalu.png";
+import logo10 from "../../img/logos/babalu.webp";
 import logo11 from "../../img/logos/adlibitum.png";
 import logo12 from "../../img/logos/Popladies.png";
 import logo13 from "../../img/logos/rockbeat.png";
