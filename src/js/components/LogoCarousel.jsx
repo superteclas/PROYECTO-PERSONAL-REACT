@@ -3,12 +3,12 @@ import "../../styles/carousel.css";
 
 import logo1 from "../../img/logos/capo.webp";
 import logo2 from "../../img/logos/black.webp";
-import logo3 from "../../img/logos/consigo.png";
+import logo3 from "../../img/logos/consigo.webp";
 import logo4 from "../../img/logos/eventime.webp";
 import logo5 from "../../img/logos/glitter.webp";
 import logo6 from "../../img/logos/Marriot.svg";
-import logo7 from "../../img/logos/rock.png";
-import logo8 from "../../img/logos/tribu.png";
+import logo7 from "../../img/logos/rock.webp";
+import logo8 from "../../img/logos/tribu.webp";
 import logo9 from "../../img/logos/polop.webp";
 import logo10 from "../../img/logos/babalu.webp";
 import logo11 from "../../img/logos/adlibitum.webp";
