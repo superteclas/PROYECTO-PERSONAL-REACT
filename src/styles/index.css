@@ -1,7 +1,4 @@
-/* styles/index.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
+/* Usa esta fuente desde el <head> del HTML con link rel="stylesheet" */
 body {
   font-family: 'Poiret One', cursive;
   color: #222;
@@ -63,7 +60,6 @@ footer.footer {
   height: 50px;
 }
 
-
 .icon-social {
   transition: transform 0.6s ease;
   display: inline-block;
@@ -102,12 +98,14 @@ footer.footer {
   transform: scale(1.1);
 }
 
+/* Oculta texto visible en la imagen LCP (por accesibilidad y CLS) */
 img.lcp-placeholder {
   font-size: 0;
   color: transparent;
   text-indent: -9999px;
 }
 
+/* Animación de latido */
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.08); }
