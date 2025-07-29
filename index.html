@@ -5,19 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Preconexión a Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Preload y carga no bloqueante de fuentes -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet"
+      />
     </noscript>
 
     <!-- Preload CSS principal (no bloqueante) -->
-    <link rel="preload" href="/src/styles/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/src/styles/home.css"></noscript>
+    <link
+      rel="preload"
+      href="/src/styles/home.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/src/styles/home.css" /></noscript>
 
     <!-- Preload imagen LCP -->
     <link
@@ -29,8 +46,14 @@
 
     <!-- SEO -->
     <title>Álvaro Ponce Keys – Pianista en Valencia | Home</title>
-    <meta name="description" content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más." />
-    <meta name="google-site-verification" content="x-tUjiyISjBg7mX99zQwmbIRe7PcC1XI6SIK9aimTY8" />
+    <meta
+      name="description"
+      content="Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más."
+    />
+    <meta
+      name="google-site-verification"
+      content="x-tUjiyISjBg7mX99zQwmbIRe7PcC1XI6SIK9aimTY8"
+    />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://alvaroponcekeys.com/" />
@@ -41,12 +64,24 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Álvaro Ponce Keys – Pianista en Valencia" />
-    <meta property="og:description" content="Conciertos, clases, grabaciones, arreglos y más." />
-    <meta property="og:image" content="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png" />
+    <meta
+      property="og:title"
+      content="Álvaro Ponce Keys – Pianista en Valencia"
+    />
+    <meta
+      property="og:description"
+      content="Conciertos, clases, grabaciones, arreglos y más."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="2025-07-25T12:00:00+00:00" />
-    <link rel="image_src" href="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png" />
+    <link
+      rel="image_src"
+      href="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png"
+    />
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF36LZ5ZJJ"></script>
@@ -55,8 +90,8 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
-      gtag('config', 'G-YF36LZ5ZJJ');
+      gtag("js", new Date());
+      gtag("config", "G-YF36LZ5ZJJ");
     </script>
 
     <!-- Datos estructurados JSON-LD -->
@@ -66,12 +101,14 @@
         "@type": "MusicGroup",
         "name": "Álvaro Ponce Keys",
         "url": "https://alvaroponcekeys.com",
-        "image": "https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png",
+        "image":
+          "https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png",
         "sameAs": [
           "https://www.instagram.com/alvaroponcekeys",
           "https://www.youtube.com/@superteclas"
         ],
-        "description": "Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más.",
+        "description":
+          "Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más.",
         "location": {
           "@type": "Place",
           "address": {
@@ -91,34 +128,25 @@
   </head>
 
   <body>
+    <!-- Aquí no incluimos imagen LCP como fondo ni img visible, lo gestiona React -->
+
     <!-- Encabezados invisibles para SEO -->
     <h1 style="display: none;">Álvaro Ponce – Pianista profesional en Valencia</h1>
     <h2 style="display: none;">Músico de directo en Valencia</h2>
     <h2 style="display: none;">Clases de piano en Valencia</h2>
     <h2 style="display: none;">Grabaciones y arreglos musicales</h2>
 
-    <!-- Fondo LCP como background-image -->
-    <div
-      class="lcp-image"
-      role="img"
-      aria-label="Álvaro Ponce tocando el piano"
-      style="
-        background-image: url('/assets/pianoroto-1109x741-B5lYAim-.webp');
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        z-index: -1;
-      "
-    ></div>
-
     <!-- Texto SEO adicional oculto -->
-    <img src="/alvarito.png" alt="Álvaro Ponce tocando el piano en directo" style="display: none;" />
+    <img
+      src="/alvarito.png"
+      alt="Álvaro Ponce tocando el piano en directo"
+      style="display: none;"
+    />
     <p style="display: none;">
-      Álvaro Ponce es un pianista profesional en Valencia especializado en conciertos de piano,
-      clases particulares de música y arreglos musicales. Si buscas un pianista en Valencia, Álvaro
-      Ponce ofrece una experiencia única como músico polivalente.
+      Álvaro Ponce es un pianista profesional en Valencia especializado en
+      conciertos de piano, clases particulares de música y arreglos
+      musicales. Si buscas un pianista en Valencia, Álvaro Ponce ofrece una
+      experiencia única como músico polivalente.
     </p>
 
     <!-- Enlaces internos invisibles para SEO -->
