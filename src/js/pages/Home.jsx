@@ -5,11 +5,6 @@ import { Footer } from "../components/Footer";
 import LogoCarousel from "../components/LogoCarousel";
 import { FaCommentDots } from "react-icons/fa";
 
-// Imágenes WebP optimizadas
-import topImageSmall from "../../img/pianoroto-550x370.webp";
-import topImageMedium from "../../img/pianoroto-1109x741.webp";
-import topImageLarge from "../../img/pianoroto-2207x1478.webp";
-
 import downImage from "../../img/piano2.webp";
 
 import "../../styles/home.css";
@@ -24,24 +19,26 @@ const Home = () => {
           content="Pianista profesional en Valencia: conciertos, clases particulares, arreglos y grabaciones. Música en directo y formación musical personalizada."
         />
         <link rel="canonical" href="https://alvaroponcekeys.com/" />
+
+        {/* Preload para la imagen LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dydvadrs7/image/upload/v1753896130/pianoroto-1109x741_id3csa.webp"
+          fetchpriority="high"
+        />
       </Helmet>
 
       <div className="d-flex flex-column min-vh-100" style={{ position: "relative" }}>
         <Navbar />
 
-        {/* Hero principal con imagen responsive */}
+        {/* Hero principal con imagen LCP remota */}
         <section
           className="position-relative d-flex align-items-center text-white"
           style={{ height: "90vh" }}
         >
           <img
-            src={topImageMedium}
-            srcSet={`
-              ${topImageSmall} 550w,
-              ${topImageMedium} 1109w,
-              ${topImageLarge} 2207w
-            `}
-            sizes="(max-width: 600px) 550px, (max-width: 1200px) 1109px, 2207px"
+            src="https://res.cloudinary.com/dydvadrs7/image/upload/v1753896130/pianoroto-1109x741_id3csa.webp"
             alt="Álvaro Ponce tocando el piano"
             fetchpriority="high"
             decoding="async"
