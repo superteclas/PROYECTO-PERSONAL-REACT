@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fuentes desde Google Fonts -->
+    <!-- Fuentes desde Google Fonts (en lugar de fuentes locales) -->
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
 
-    <!-- Preload imagen LCP correctamente -->
+    <!-- Fuentes locales (desactivadas temporalmente) -->
+    <!-- <link rel="stylesheet" href="/src/styles/fonts.css" /> -->
+
+    <!-- Estilos base comunes -->
+   <!-- <link rel="stylesheet" href="/src/styles/home.css" /> -->
+    <!-- Estilos específicos para index -->
+    <!--<link rel="stylesheet" href="/src/styles/index.css" /> -->
+
+    <!-- Preload imagen LCP -->
     <link
       rel="preload"
       as="image"
-      href="/pianoroto-1109x741.webp"
+      href="/public/pianoroto-1109x741.webp"
       fetchpriority="high"
-      type="image/webp"
     />
 
     <!-- SEO -->
@@ -36,9 +43,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Álvaro Ponce Keys – Pianista en Valencia" />
-    <meta property="og:description" content="Conciertos, clases, grabaciones, arreglos y más." />
-    <meta property="og:image" content="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png" />
+    <meta
+      property="og:title"
+      content="Álvaro Ponce Keys – Pianista en Valencia"
+    />
+    <meta
+      property="og:description"
+      content="Conciertos, clases, grabaciones, arreglos y más."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="2025-07-25T12:00:00+00:00" />
     <link
@@ -64,12 +80,14 @@
         "@type": "MusicGroup",
         "name": "Álvaro Ponce Keys",
         "url": "https://alvaroponcekeys.com",
-        "image": "https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png",
+        "image":
+          "https://res.cloudinary.com/dydvadrs7/image/upload/v1753350772/alvaroponce_logo-simple-_con-fondo_rmtij8.png",
         "sameAs": [
           "https://www.instagram.com/alvaroponcekeys",
           "https://www.youtube.com/@superteclas"
         ],
-        "description": "Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más.",
+        "description":
+          "Músico polivalente en Valencia: conciertos, clases, grabaciones, arreglos y más.",
         "location": {
           "@type": "Place",
           "address": {
@@ -89,6 +107,8 @@
   </head>
 
   <body>
+    <!-- Aquí no incluimos imagen LCP como fondo ni img visible, lo gestiona React -->
+
     <!-- Encabezados invisibles para SEO -->
     <h1 style="display: none;">Álvaro Ponce – Pianista profesional en Valencia</h1>
     <h2 style="display: none;">Músico de directo en Valencia</h2>
