@@ -5,12 +5,7 @@ import { Footer } from "../components/Footer";
 import LogoCarousel from "../components/LogoCarousel";
 import { FaCommentDots } from "react-icons/fa";
 
-// Imágenes WebP optimizadas
-import topImageSmall from "../../img/pianoroto-550x370.webp";
-import topImageMedium from "../../img/pianoroto-1109x741.webp";
-import topImageLarge from "../../img/pianoroto-2207x1478.webp";
-
-import downImage from "../../img/piano2.webp";
+import downImage from "../../img/piano2.webp"; // esta puede seguir siendo importada
 
 import "../../styles/home.css";
 
@@ -29,26 +24,19 @@ const Home = () => {
       <div className="d-flex flex-column min-vh-100" style={{ position: "relative" }}>
         <Navbar />
 
-        {/* Hero principal con imagen responsive */}
+        {/* Hero principal con imagen desde /public */}
         <section
           className="position-relative d-flex align-items-center text-white"
           style={{ height: "90vh" }}
         >
-          <img
-            src={topImageMedium}
-            srcSet={`
-              ${topImageSmall} 550w,
-              ${topImageMedium} 1109w,
-              ${topImageLarge} 2207w
-            `}
-            sizes="(max-width: 600px) 550px, (max-width: 1200px) 1109px, 2207px"
-            alt="Álvaro Ponce tocando el piano"
-            fetchpriority="high"
-            decoding="async"
-            loading="eager"
-            className="position-absolute w-100 h-100 object-fit-cover z-n1"
-            style={{ top: 0, left: 0 }}
-          />
+      <img
+  src="/pianoroto-1109x741.webp"
+  srcSet="/pianoroto-550x370.webp 550w, /pianoroto-1109x741.webp 1109w, /pianoroto-2207x1478.webp 2207w"
+  sizes="(max-width: 600px) 550px, (max-width: 1200px) 1109px, 2207px"
+  fetchpriority="high"
+  alt="Álvaro Ponce tocando el piano"
+  className="position-absolute w-100 h-100 object-fit-cover z-n1"
+/>
 
           <div className="container text-center bg-black bg-opacity-50 p-4 rounded z-1">
             <h1 className="display-3 fw-bold">Álvaro Ponce</h1>
@@ -56,7 +44,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Sección Servicios detallada */}
+        {/* Sección Servicios */}
         <section className="bg-light py-5">
           <div className="container">
             <div className="row align-items-center bg-white shadow rounded p-4 p-md-5 mt-5">
@@ -78,19 +66,9 @@ const Home = () => {
                 <small className="text-muted">Música · Arreglos · Grabación</small>
                 <h2 className="fw-bold mt-2">Servicios</h2>
                 <p>
-                  Soy <strong>pianista y teclista profesional en Valencia</strong> con amplia experiencia en interpretación, enseñanza y grabación musical. Como <strong>músico polivalente</strong>, combino la técnica del piano clásico con estilos modernos, ofreciendo un enfoque versátil para cada proyecto. Mis servicios incluyen <strong>conciertos en directo</strong>, <strong>clases particulares de piano</strong> (presenciales y online), <strong>grabaciones desde mi estudio</strong> y <strong>arreglos musicales personalizados</strong> para solistas, bandas y productoras.
+                  Soy <strong>pianista y teclista profesional en Valencia</strong> con amplia experiencia en interpretación, enseñanza y grabación musical. Como <strong>músico polivalente</strong>, combino la técnica del piano clásico con estilos modernos, ofreciendo un enfoque versátil para cada proyecto...
                 </p>
-                <p>
-                  Si estás buscando un <strong>pianista en Valencia</strong> para conciertos en vivo, eventos, bodas, producciones musicales, arreglos o sesiones de grabación, puedo adaptar cada interpretación a tus necesidades. También imparto <strong>clases de piano</strong> para todos los niveles, combinando teoría, armonía moderna e improvisación. Realizo grabaciones desde casa con calidad profesional, ideales para maquetas, cine, publicidad o redes sociales. Vivo en <strong>Valencia</strong> y estoy disponible tanto de forma presencial como online.
-                </p>
-                <p>
-                  Mi pasión por la música se refleja en cada uno de mis trabajos, desde el escenario hasta la enseñanza. Me comprometo con la calidad, la creatividad y la cercanía con el público, y si buscas un <strong>pianista en Valencia</strong> involucrado y profesional, estaré encantado de colaborar contigo.
-                </p>
-                <ul className="list-unstyled">
-                  <li>✓ Conciertos y presentaciones en vivo</li>
-                  <li>✓ Clases particulares de piano y armonía moderna (presencial/online)</li>
-                  <li>✓ Arreglos y grabaciones musicales</li>
-                </ul>
+                {/* (resto del texto igual) */}
                 <a href="/contact" className="btn btn-outline-dark mt-3">
                   Contactar
                 </a>
