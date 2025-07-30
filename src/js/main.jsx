@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import '../styles/index.css';
+import "../styles/home.css";
 
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async'; // 👉 nuevo import
