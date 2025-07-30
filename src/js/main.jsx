@@ -6,12 +6,15 @@ import "bootstrap";
 import '../styles/index.css';
 
 import { BrowserRouter } from 'react-router-dom';
-import App from './App'; // Cambiamos Home por App
+import { HelmetProvider } from 'react-helmet-async'; // 👉 nuevo import
+import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <HelmetProvider> {/* 👉 rodea toda la app */}
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </HelmetProvider>
   </React.StrictMode>
 );
