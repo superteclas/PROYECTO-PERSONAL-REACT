@@ -35,3 +35,7 @@
   [headers.values]
     Content-Type = "text/plain"
 
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
