@@ -52,9 +52,9 @@ const Agenda = () => {
         <section className="agenda-contenido container text-white text-center py-5 flex-grow-1 d-flex flex-column justify-content-center">
           {/* Título y subtítulo */}
           <h1 className="display-4 fw-bold mb-2">Agenda</h1>
-          <p className="text-white-50 mb-5">
-            (Solo se muestran las fechas públicas. Los eventos privados no se muestran.)
-          </p>
+          <p className="agenda-subtitulo evento-box text-white">
+  ℹ️ (Solo se muestran las fechas públicas, los eventos privados no.)
+</p>
 
           {/* Lista de conciertos */}
           {Object.entries(conciertos).map(([mes, eventos], idx) => (

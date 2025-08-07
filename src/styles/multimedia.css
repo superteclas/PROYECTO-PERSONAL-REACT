@@ -1,55 +1,17 @@
-/* ========== Scroll oculto para carruseles ========== */
-.no-scrollbar {
-  -ms-overflow-style: none;  /* IE y Edge */
-  scrollbar-width: none;     /* Firefox */
-}
-.no-scrollbar::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari */
-}
-
-/* ========== Contenedor con scroll suave ========== */
-.scroll-container {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* Mejor para iOS */
-}
-
-/* ========== Botones de scroll estilizados ========== */
-.scroll-button {
-  background: linear-gradient(90deg, #939295, #565657);
+.multimedia-background {
+  background: linear-gradient(
+      rgba(97, 97, 97, 0.7),
+      rgba(195, 194, 194, 0.9)
+    ),
+    #444444;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   color: white;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow:
-    0 10px 15px -3px rgba(29, 29, 29, 0.5),
-    0 4px 6px -2px rgba(59, 59, 59, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
-  border: none;
-  outline: none;
 }
 
-.scroll-button:hover,
-.scroll-button:focus {
-  background: linear-gradient(90deg, #222222, #b7b7b9);
-  transform: scale(1.1);
-  box-shadow:
-    0 20px 25px -5px rgba(79, 79, 80, 0.7),
-    0 10px 10px -5px rgba(145, 144, 147, 0.6);
-}
-
-/* ========== Contenedor de los botones debajo del carrusel ========== */
-.scroll-buttons-container {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  margin-top: 2rem;
-}
-
-/* ✅ Botón flotante de contacto original */
+/* Botón flotante de contacto */
 .floating-contact {
   position: fixed;
   bottom: 20px;
@@ -86,16 +48,5 @@
   }
   100% {
     transform: scale(1);
-  }
-}
-
-/* ========== Responsividad general ========== */
-@media (max-width: 640px) {
-  .scroll-buttons-container {
-    display: none;
-  }
-
-  .scroll-button {
-    display: none;
   }
 }
