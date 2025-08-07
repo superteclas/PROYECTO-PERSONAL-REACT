@@ -1,18 +1,74 @@
+/* Fondo fijo compatible con móviles */
+.agenda-fondo {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Simula el fondo fijo con un pseudo-elemento */
+.agenda-fondo::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fondo.webp"); /* Ajusta la ruta si es necesario */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* Contenido principal de la agenda */
+.agenda-contenido {
+  z-index: 2;
+}
+
+/* Título del mes */
+.agenda-mes {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Recuadro negro detrás de cada fecha */
 .evento-box {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.65); /* Negro con opacidad */
   border-radius: 8px;
   display: inline-block;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.5rem auto;
+  padding: 0.75rem 1.25rem;
   transition: background-color 0.3s ease;
 }
 
+/* Hover sutil (opcional) */
 .evento-box:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Texto de cada evento */
 .agenda-evento {
   font-size: 1.1rem;
   color: #ffffff;
+  margin: 0;
+}
+
+/* Título principal "Agenda" */
+.agenda-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtítulo con aclaración */
+.agenda-subtitulo {
+  font-size: 0.9rem;
+  color: #dddddd;
+  margin-bottom: 2rem;
 }

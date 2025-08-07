@@ -44,7 +44,7 @@ const Agenda = () => {
           backgroundImage: `url(${fondo})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundAttachment: "fixed",
+          
         }}
       >
         <Navbar />
