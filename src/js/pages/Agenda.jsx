@@ -53,7 +53,7 @@ const Agenda = () => {
           {/* Título y subtítulo */}
           <h1 className="display-4 fw-bold mb-2">Agenda</h1>
           <p className="agenda-subtitulo evento-box text-white">
-  ℹ️ (Solo se muestran las fechas públicas, los eventos privados no.)
+  ℹ️ (Solo se muestran los eventos públicos. Para más información sobre disponibilidad de fechas contacta conmigo.)
 </p>
 
           {/* Lista de conciertos */}
