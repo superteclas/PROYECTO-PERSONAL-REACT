@@ -14,7 +14,6 @@ const Multimedia = () => {
     { id: "QNL_3l6X_GU", title: "Versiones propias" },
     { id: "_Wqo0eP72o4", title: "Música clásica" },
     { id: "ZvRaxSpt5D4", title: "Improvisación" },
-    { id: "EV4XVtswgM0", title: "Músico de grupo de covers" },
     { id: "ovQ2nYlWy4g", title: "Director Musical" },
     { id: "OCOcELEiyDQ", title: "Programación de Sintetizadores" },
     { id: "3ORS9qK6bEc", title: "Músico de Rock" },
