@@ -9,7 +9,7 @@ const Multimedia = () => {
   const videos = [
     { id: "xrwuyWsBwR0", title: "Piano Solo" },
     { id: "aw6iPElf-Nc", title: "Músico de sesión" },
-    { id: "kgmlqp0fa28", title: "Músico con banda" },
+    { id: "y_ES98MRJE0", title: "Músico con banda" },
     { id: "oAXHS2gluTE", title: "Músico de banda de Swing" },
     { id: "rJdQLtftpG4", title: "Músico de grupo de versiones" },
     { id: "QNL_3l6X_GU", title: "Versiones propias" },
