@@ -10,6 +10,7 @@ const Multimedia = () => {
     { id: "xrwuyWsBwR0", title: "Piano Solo" },
     { id: "aw6iPElf-Nc", title: "Músico de sesión" },
     { id: "kgmlqp0fa28", title: "Músico con banda" },
+    { id: "oAXHS2gluTE", title: "Músico de banda de Swing" },
     { id: "rJdQLtftpG4", title: "Músico de grupo de versiones" },
     { id: "QNL_3l6X_GU", title: "Versiones propias" },
     { id: "ZvRaxSpt5D4", title: "Improvisación" },
