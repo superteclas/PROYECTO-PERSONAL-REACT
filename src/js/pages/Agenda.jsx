@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import fondo from "../../img/fondo.webp";
+import { FaCommentDots } from "react-icons/fa";
 import "../../styles/agenda.css";
 
 const conciertos = {
@@ -72,7 +73,13 @@ const Agenda = () => {
             </div>
           ))}
         </section>
-
+{/* Botón flotante */}
+        <div className="floating-contact">
+          <a href="/contact">
+            <FaCommentDots />
+            Contactar
+          </a>
+        </div>
         <Footer />
       </div>
     </>
