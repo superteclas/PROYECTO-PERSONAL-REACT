@@ -12,8 +12,8 @@ const Multimedia = () => {
     { id: "kgmlqp0fa28", title: "Músico con banda" },
     { id: "rJdQLtftpG4", title: "Músico de grupo de versiones" },
     { id: "QNL_3l6X_GU", title: "Versiones propias" },
-    { id: "_Wqo0eP72o4", title: "Música clásica" },
     { id: "ZvRaxSpt5D4", title: "Improvisación" },
+    { id: "_Wqo0eP72o4", title: "Música clásica" },
     { id: "ovQ2nYlWy4g", title: "Director Musical" },
     { id: "OCOcELEiyDQ", title: "Programación de Sintetizadores" },
     
