@@ -10,13 +10,13 @@ const Multimedia = () => {
     { id: "xrwuyWsBwR0", title: "Piano Solo" },
     { id: "aw6iPElf-Nc", title: "Músico de sesión" },
     { id: "kgmlqp0fa28", title: "Músico con banda" },
-    { id: "Eb6yGW3JNw8", title: "Sintetizador" },
+    { id: "rJdQLtftpG4", title: "Músico de grupo de versiones" },
     { id: "QNL_3l6X_GU", title: "Versiones propias" },
     { id: "_Wqo0eP72o4", title: "Música clásica" },
     { id: "ZvRaxSpt5D4", title: "Improvisación" },
     { id: "ovQ2nYlWy4g", title: "Director Musical" },
     { id: "OCOcELEiyDQ", title: "Programación de Sintetizadores" },
-    { id: "3ORS9qK6bEc", title: "Músico de Rock" },
+    
   ];
 
   return (
