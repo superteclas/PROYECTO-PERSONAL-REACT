@@ -16,7 +16,7 @@ export const Footer = () => {
 
       {/* Texto autor sin enlace */}
       <p style={{ fontSize: "0.9rem", color: "#222" }}>
-        Made by Álvaro Ponce © {new Date().getFullYear()}
+        Desarrollado por Álvaro Ponce © {new Date().getFullYear()}
       </p>
 
       {/* Redes sociales */}
